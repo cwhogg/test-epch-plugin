@@ -1,0 +1,7 @@
+{
+  "name": "marley-personal",
+  "owner": "Chris Hogg",
+  "plugins": [
+    { "name": "marley-foundation", "path": "plugins/marley-foundation" }
+  ]
+}
