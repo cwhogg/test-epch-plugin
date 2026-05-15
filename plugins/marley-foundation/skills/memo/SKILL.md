@@ -1,6 +1,15 @@
 ---
 name: memo
-description: Draft a Marley Medical memo — either a Decision Memo (default — Marley's canonical 7-section format for documenting non-trivial decisions: Goal / Stakeholders / Context / Decision / Rationale / Alternatives / Decider), or a periodic investor update memo. Triggers on "decision memo", "write a memo", "draft a memo on [X]", "document the decision to [X]", "need to decide [X] — write it up", "investor update", "monthly investor memo", "quarterly update", or similar. Variant selection happens inside the skill based on audience cues; when ambiguous, the skill will ask which variant before drafting.
+description: >-
+  Draft a Marley Medical memo — either a Decision Memo (default — Marley's
+  canonical 7-section format for documenting non-trivial decisions with
+  sections Goal, Stakeholders, Context, Decision, Rationale, Alternatives,
+  and Decider), or a periodic investor update memo. Triggers on "decision
+  memo", "write a memo", "draft a memo on [X]", "document the decision to
+  [X]", "need to decide [X] — write it up", "investor update", "monthly
+  investor memo", "quarterly update", or similar. Variant selection happens
+  inside the skill based on audience cues; when ambiguous, the skill will
+  ask which variant before drafting.
 ---
 
 # Memo skill — handles two variants

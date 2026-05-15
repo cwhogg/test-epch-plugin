@@ -59,6 +59,16 @@ Self-review identified 20 high+medium-impact improvements applied in one pass. M
 
 ---
 
+## v0.3.2 — Plugin directory structure + YAML frontmatter fixes
+
+Three issues uncovered by `claude plugin validate` that were causing Cowork's "Marketplace sync failed":
+
+- **`plugin.json` was at `plugins/marley-foundation/plugin.json`** instead of inside its own `.claude-plugin/` directory. The validator requires `plugins/marley-foundation/.claude-plugin/plugin.json`. Moved via `git mv`.
+- **`marley-voice/SKILL.md` and `memo/SKILL.md` had unquoted `: ` (colon-space) mid-description**, which YAML parses as a key:value separator and silently drops the entire frontmatter. Both descriptions converted to YAML folded-scalar (`>-`) form. Other 6 SKILL.md descriptions were fine but those two contained phrases like *"writing: marketing copy"* and *"non-trivial decisions: Goal..."* that broke parsing.
+- **`plugin.json` missing `author` field** (validator warning, not error). Added `{"name": "Chris Hogg", "email": "cwhogg@gmail.com"}`.
+
+Local `claude plugin validate .` and `claude plugin validate ./plugins/marley-foundation` both now return `✔ Validation passed`.
+
 ## v0.3.1 — Marketplace.json schema fix
 
 Two schema corrections in `.claude-plugin/marketplace.json` that were causing "Failed to add marketplace" in Cowork:

@@ -1,6 +1,12 @@
 ---
 name: marley-voice
-description: Marley Medical's brand voice — five personality descriptors (aspiring, approachable, confident, smart/clever, bold), banned and preferred phrase lists, exemplar copy. Plainspoken-confident register, contractions, no corporate hedging. Used for any Marley-branded writing: marketing copy, decks, memos, emails, investor updates, patient-facing content, social, internal docs, headlines, pitches.
+description: >-
+  Marley Medical's brand voice — five personality descriptors (aspiring,
+  approachable, confident, smart/clever, bold), banned and preferred phrase
+  lists, exemplar copy. Plainspoken-confident register, contractions, no
+  corporate hedging. Used for any Marley-branded writing — marketing copy,
+  decks, memos, emails, investor updates, patient-facing content, social,
+  internal docs, headlines, pitches.
 ---
 
 # Marley Voice — ambient context for written output
