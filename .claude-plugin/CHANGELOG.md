@@ -59,6 +59,15 @@ Self-review identified 20 high+medium-impact improvements applied in one pass. M
 
 ---
 
+## v0.3.1 — Marketplace.json schema fix
+
+Two schema corrections in `.claude-plugin/marketplace.json` that were causing "Failed to add marketplace" in Cowork:
+
+- `owner` was a string (`"Chris Hogg"`); per the Claude Code plugin marketplace spec it must be an object with a `name` field — fixed to `{"name": "Chris Hogg"}`.
+- Plugin reference field was `path`; the spec requires `source` (with a `./` prefix for paths relative to repo root) — fixed to `"source": "./plugins/marley-foundation"`.
+
+No plugin content changes; this is a manifest-only fix.
+
 ## v0.3.0 — Memo general-variant rebuild + Decision Framework v1
 
 Two related additions in one pass.
