@@ -2,6 +2,37 @@
 
 **Source-anchored cutoff:** the most recent investor update in source is **November 2022**. Decks in `payer pitch decks/` and `fundraising decks/` extend through **March 2024**. State below is what's documented in source; nothing past March 2024 should be assumed without checking current state.
 
+---
+
+## Most current source-attested numbers (single-glance summary)
+
+| Metric | Value | Source / Date |
+|---|---|---|
+| **Patients enrolled** | 1,250 (target 3,200 by EOY 2024, 7,500 by EOY 2025) | Sapphire deck, March 2024 |
+| **States operating in** | 6 (clinicians licensed in 26 more) | Sapphire deck, March 2024 |
+| **Payer contracts** | 13 top Midwest payers | Sapphire deck, March 2024 |
+| **Payer coverage** | 77% in active markets | Sapphire deck, March 2024 |
+| **Covered lives under contract** | 31M | Sapphire deck, March 2024 |
+| **PPPM rate (FFS)** | $75 PPPM | Sapphire deck, March 2024 |
+| **Gross margin (FFS foundation)** | 35% | Sapphire deck, March 2024 |
+| **Target outcomes-based rate** | $150 PPPM, 65% gross margin | Sapphire deck, March 2024 |
+| **% at guideline clinical goal** | 70% at 6 months | BCBS FL deck, March 2024 |
+| **Avg BP reduction** | 14.8 mmHg at 12 weeks (Stage 2 HTN entry) | BCBS FL deck, March 2024 |
+| **NPS** | 86 (last 30 days) | BCBS FL deck, March 2024 |
+| **Patients active** | 78% in last 30 days | BCBS FL deck, March 2024 |
+| **Retention at 1 year** | 75% | BCBS FL deck, March 2024 |
+| **Access to first MD visit** | <1 week | BCBS FL deck, March 2024 |
+| **Device readings per patient** | 5 per week | BCBS FL deck, March 2024 |
+| **Funding round in progress** | $6–8M, led by a16z | Sapphire deck, March 2024 |
+| **Patient demographic — age** | 56 mean, 90 max | BCBS FL + Sapphire decks |
+| **Chronic conditions per patient** | 3.3 mean / 3 median | BCBS FL + Sapphire decks |
+| **% with mental-health diagnosis** | 34% | BCBS FL + Sapphire decks |
+| **% with diagnosed obesity** | 62% | BCBS FL + Sapphire decks |
+
+When using current Marley numbers in any draft (memo / deck / pitch), pull from this table first. If the metric isn't here, fall back to the dated detail below.
+
+---
+
 ## Most recent snapshot — from March 2024 fundraise + payer decks
 
 By March 2024 Marley had evolved meaningfully from the Nov 2022 picture:

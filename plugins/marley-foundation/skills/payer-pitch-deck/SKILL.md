@@ -40,10 +40,14 @@ Use the master PPT template at `~/epch-claude/visual brand/Marley_Presentation_M
 
 ## Step 4 — Customize per payer
 
-- Cover slide: payer name + date
-- State-specific evidence: emphasize Marley evidence in payer's primary states if available
-- "Easy contracting" slide: reference existing payer-family contracts (BCBS / Anthem / etc.) when applicable
-- Patient-selection criteria: tune to payer's likely target population (commercial / MA / Medicaid)
+- **Cover slide:** payer name + date
+- **State-specific evidence:** emphasize Marley evidence in payer's primary states if available
+- **"Easy contracting" slide:** reference existing payer-family contracts when applicable. Marley payer-family awareness to apply:
+  - **BCBS plans** are independent licensees — a contract with one BCBS plan does NOT automatically extend to others. *Florida Blue is BCBS FL; Highmark covers PA / WV / DE / NY (parts); Anthem Blue Cross is a BCBS licensee in some states.* Reference the specific BCBS-affiliate Marley has worked with, not "BCBS" generically.
+  - **Anthem / Elevance Health** — Anthem rebranded as Elevance Health (parent) in 2022, but the Anthem brand persists on consumer-facing health plans. The relationship to BCBS Anthem-affiliate plans is specific to each state.
+  - **Humana, UnitedHealthcare, Aetna, Cigna** — national for-profit payers. Contract with one MA segment doesn't extend to commercial segment automatically.
+  - **MA-specific framing** — pitching an MA plan? Emphasize Star Ratings, MLR reduction in the polychronic 5%, and the engagement gap (up to 30% of MA membership unengaged). These are the highest-leverage points in MA contracting.
+- **Patient-selection criteria:** tune to payer's likely target population (commercial / MA / Medicaid). Marley currently excludes Medicaid (per Nov 2022 update — verify current state in `pipeline.md`).
 
 ## Step 5 — Hand to chris-critic for review
 
@@ -53,7 +57,7 @@ After drafting, hand the draft to `chris-critic` for review. Read the review ret
 
 At the end of the deck (or as a brief note for the user), name the principles / voice rules / context decisions / visual brand choices that materially shaped the output. Example:
 
-> *Drafted with: marley-principles #2 (specialized care) + #6 (fast feedback loops); marley-voice (payer register, no consumer wit); marley-context/market.md (cardiometabolic ICP), pipeline.md (Nov 2023 outcomes); marley-visual-brand (purple-on-cream slide canvas, Reckless display + Greycliff body); payer-pitch-deck/evidence-conventions (Ettehad Lancet citation for downstream-risk reduction).*
+> *Drafted with: marley-principles #2 (specialized care) + #6 (fast feedback loops); marley-voice (payer register, no consumer wit); marley-context/market.md (cardiometabolic ICP), pipeline.md ([dated clinical outcomes — pull current date and metrics from pipeline.md at draft time]); marley-visual-brand (purple-on-cream slide canvas, Reckless display + Greycliff body); payer-pitch-deck/evidence-conventions (Ettehad Lancet citation for downstream-risk reduction).*
 
 ## Files
 

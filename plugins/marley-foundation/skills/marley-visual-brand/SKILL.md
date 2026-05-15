@@ -1,6 +1,6 @@
 ---
 name: marley-visual-brand
-description: Marley Medical's visual brand — color palette with hex codes, typography (Reckless serif + Greycliff sans), logo lockup rules, iconography, and photography style. Load for any task that produces a Marley visual artifact: decks, web pages, marketing graphics, slides, branded documents, image generation, or any work that needs to align with the Marley visual system.
+description: Marley Medical's visual brand — six-color palette with hex codes (Marley Purple #5A38B2 primary, Cream background, Red/Peach/Sky accents), Reckless serif + Greycliff sans typography, wordmark/monogram logo rules, 13 custom icons, photography style (BW headshots + warm color studio). Used for decks, web pages, marketing graphics, slides, branded documents, image generation, slide layout decisions, color choices.
 ---
 
 # Marley Visual Brand — ambient context for visual artifacts

@@ -19,14 +19,14 @@ If the question is vague ("scope our product"), push back: ask for the specific 
 ## Step 2 — Load foundation skills
 
 Before drafting:
-- Read `../marley-principles/principles.md` and `decision-frameworks.md` — these decks live inside Marley's decision style
+- Read `../marley-principles/principles.md` and `decision-frameworks.md` — product-scoping decks reflect how Marley actually reasons about decisions; load these before drafting
 - Read `../marley-voice/voice.md` — internal register: most candid, most operationally honest
 - Read `../marley-context/pipeline.md` — current-state numbers anchor scenario assumptions
 - Read `../marley-visual-brand/colors.md`, `typography.md`, `logo-usage.md` — scoping decks are still visual artifacts; brand still applies
 
 ## Step 3 — Draft
 
-Follow the canonical structure in [[narrative-arc]]:
+Reference `examples/clinical-design-august-2023-slide-by-slide.md` for the canonical worked example. Follow the canonical structure in [[narrative-arc]]:
 1. Cover
 2. The Problem (what's not working today)
 3. Required attributes / criteria for the solution
@@ -52,11 +52,7 @@ Then write the assumption set required for the target, display the output metric
 
 After drafting, hand the draft to `chris-critic` for review. Read the review returned. Incorporate the highest-impact recommendations into a revised draft. Show the user the revised draft followed by the full review block as an appendix so they can see what was flagged and what changed.
 
-The critic should pay special attention to:
-- Whether assumptions are explicit and parallel across scenarios
-- Whether the output metrics are consistent (so scenarios can be compared)
-- Whether the "required attributes" filter from Slide 3 actually constrains the scenarios in Slides 6+
-- Whether the deck shows the math honestly or buries unfavorable scenarios
+The critic has product-scoping-deck-specific scrutiny encoded in its variant-awareness block — assumption parallelism, output-metric consistency, math reconciliation, required-attributes filter, and honest-about-the-math checks all happen automatically.
 
 ## Step 6 — Cite materially-shaping decisions in a footnote
 

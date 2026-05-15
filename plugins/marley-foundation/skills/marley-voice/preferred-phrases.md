@@ -13,9 +13,11 @@ The affirmative version of [[banned-phrases]]. These are the Marley-coded vocabu
 
 - **"24/7"** — never "round the clock" or "anytime."
 - **"team of experts"**, **"specialized care team"**, **"multi-disciplinary team"** — three flavors of the same idea. Pick by rhythm.
+- **"comprehensive"** — Marley-coded word appearing 15+ times across source (payer + fundraise decks, narrative docs). Use to describe the care model: *"comprehensive cardiometabolic care"*, *"comprehensive team-based care"*, *"a comprehensive team of experts"*. Pair with a concrete noun, not free-floating.
+- **"integrated"** — frequent companion to "comprehensive". The two together signal Marley's core model: *"integrated, virtual-first cardiometabolic clinic"*.
 - **"licensed primary care physicians"** — when precision matters.
 - **"on-call via message, phone or video"** — recurring care-team-access phrasing.
-- **"hypertension specialists"** / **"care team of experts"** — the team is the differentiator.
+- **"hypertension specialists"** / **"cardiometabolic specialists"** / **"care team of experts"** — the team is the differentiator.
 
 ## Patient-experience phrasing
 

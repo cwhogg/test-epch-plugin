@@ -40,14 +40,14 @@ Follow the canonical structure in [[narrative-arc]]:
 
 **Second half (fundraise-specific):**
 - B2C2B GTM strategy (5 steps)
-- Patient growth trajectory (multi-year bar chart with multipliers)
+- Patient growth trajectory (multi-year bar chart with multipliers — pull current numbers from `../marley-context/pipeline.md`)
 - AI / platform roadmap (Fetch + LLM-assisted functions)
-- Payer contracts (13 payers, 77% coverage, 31M lives, $75 PPPM, 35% margin)
-- Contract upgrade path (FFS → outcomes-based: $75 → $150 PPPM, 35% → 65% margin)
-- B2B pipeline (named targets)
-- The Plan (Growth / Revenue / Partnerships / Unit economics quadrants)
+- Payer contracts slide (current payer count / coverage % / covered lives / current PPPM rate / current gross margin — pull from `../marley-context/pipeline.md`)
+- Contract upgrade path (FFS foundation → outcomes-based progression — see `traction-conventions.md` for the canonical $75 → $100 → $125 → $150 PPPM ladder, but always validate current rates against `pipeline.md`)
+- B2B pipeline (named targets — see `examples/sapphire-march-2024-slide-by-slide.md` for the canonical list, but update for what's actually current)
+- The Plan (Growth / Revenue / Partnerships / Unit economics quadrants — concrete dated targets from current pipeline)
 - Team (Propeller heritage)
-- **The Ask** — risks paid down vs. risks being underwritten
+- **The Ask** — the named round size, the named lead investor (whichever round this deck is for), plus the risks-paid-down / risks-being-underwritten frame
 
 Apply [[traction-conventions]] for the three-pillar traction frame (patient growth + clinical evidence + payer contracting).
 
@@ -64,15 +64,13 @@ Reference `examples/sapphire-march-2024-slide-by-slide.md` for the canonical str
 
 After drafting, hand the draft to `chris-critic` for review. Read the review returned. Incorporate the highest-impact recommendations into a revised draft. Show the user the revised draft followed by the full review block as an appendix so they can see what was flagged and what changed.
 
-The critic should pay extra scrutiny to:
-- Whether traction framing is specific and source-tied (no vague growth claims)
-- Whether the ask is clearly framed and properly disarmed via risks-paid-down/underwriting
-- Whether the multi-year plan is internally consistent (patients × PPPM → ARR math holds)
-- Whether the team slide says something specific (Propeller exit details) vs. generic credentialing
+The critic has fundraise-pitch-deck-specific scrutiny encoded in its variant-awareness block — traction-framing rigor, ask framing (risks-paid-down vs. risks-being-underwritten), multi-year plan math reconciliation, team-slide specificity, and hardcoded-stale-numbers detection all happen automatically.
 
 ## Step 6 — Cite materially-shaping decisions in a footnote
 
-> *Drafted with: marley-principles #3 (B2C2B) + #8 (broad in-network); marley-voice (investor-pitch register, specific numbers, no hedging); marley-context/pipeline.md (1,250 patients enrolled / 13 payer contracts / $75 PPPM); fundraise-pitch-deck/traction-conventions (three-pillar traction, risks-paid-down vs. underwriting frame); marley-visual-brand (purple-on-cream slide canvas, Reckless display + Greycliff body).*
+> *Drafted with: marley-principles #3 (B2C2B) + #8 (broad in-network); marley-voice (investor-pitch register, specific numbers, no hedging); marley-context/pipeline.md ([current patient count] enrolled / [current payer-contract count] / [current PPPM]); fundraise-pitch-deck/traction-conventions (three-pillar traction, risks-paid-down vs. underwriting frame); marley-visual-brand (purple-on-cream slide canvas, Reckless display + Greycliff body).*
+
+(Fill bracketed values from `pipeline.md` at the time of drafting — do not copy stale numbers from prior decks.)
 
 ## Files
 

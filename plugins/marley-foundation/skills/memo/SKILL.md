@@ -9,11 +9,9 @@ This skill produces written memo deliverables. It has **two variants**: general/
 
 ## Step 1 — Detect variant
 
-Read [[audience-cues]] and detect which variant the user wants.
+Read `audience-cues.md` and apply its routing logic. That file is the single source of truth for trigger-phrase lists, disambiguation rules, and the "what is NOT a memo" routing-elsewhere logic. When variant is ambiguous, ask the user — see the example clarifying question in `audience-cues.md`.
 
-- **Investor-update triggers**: "investor update", periodic-cadence framing, audience explicitly named as investors on a recurring cadence → use Variant B.
-- **General-memo triggers**: "memo", "one-pager", "strategy memo", audience is not the investor list → use Variant A.
-- **When ambiguous**: ask the user. *"Quick check — is this a periodic investor update, or a standalone strategy memo?"*
+Note for general-memo variant: this variant has a **flagged source gap** — the `memos/` folder did not contain canonical internal-strategy-memo exemplars. The scaffold in `format.md` Variant A is a sensible default but is not as source-grounded as the investor-update variant. Drafts using Variant A should be treated as starting points; the user may want stronger pattern fidelity once real internal memos exist.
 
 ## Step 2 — Load foundation skills
 
@@ -30,11 +28,13 @@ If the variant is **investor-update**, also read:
 
 ## Step 3 — Draft
 
-Use [[format]] for the structural template. Match the variant to its scaffold:
+Use `format.md` for the structural template. Match the variant to its scaffold:
 - **Variant A (general)**: title → framing → argument sections → recommendation → open questions.
 - **Variant B (investor update)**: title → tl;dr → The Plan → Help Requests → Team → section-by-section progress → Financials → Cash-out → Fundraising Q's → Topics for discussion.
 
-Apply Marley voice throughout. Specific numbers, no hedging, "tl;dr" lowercase for investor updates.
+Apply Marley voice — but pick the right register for the variant:
+- **Variant A** → standard Marley voice (see `../marley-voice/voice.md` general voice characterization). Plainspoken, contractions, specific numbers, no corporate hedging.
+- **Variant B** → investor-update register specifically (see `../marley-voice/voice.md` section *"Investor-update voice (same DNA, more operational)"*). Same DNA as standard voice plus: lowercase `tl;dr` section header, operational candor (*"hunker down"*, *"lots of duct tape"*, *"a worthy and fun problem to solve"*), numbered fundraising questions, scenario tables for cash-out, every numeric claim tied to source.
 
 ## Step 4 — Hand to chris-critic for review
 

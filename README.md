@@ -87,7 +87,7 @@ Should load `marley-context` and reference the canonical competitive table.
 ### 5. `memo` — general variant
 > *"Draft a 1-pager strategy memo on why Marley is expanding from hypertension to broader cardiometabolic disease."*
 
-Should load `memo`, route to general variant (no investor-update cues), apply the Variant A scaffold.
+Should load `memo`, route to general variant (no investor-update cues), apply the Variant A scaffold. **Note:** the general-memo variant has a flagged source gap — no canonical internal-strategy memos in source. The output will exercise the scaffold but won't be source-grounded the way investor-update memos are. Treat this prompt as a scaffold-validation test, not a "this is what Marley general memos always look like" test.
 
 ### 6. `memo` — investor-update variant (variant-routing test)
 > *"Draft this month's Marley investor update. We hit 80 patients this month, signed a new payer in Ohio, and we're starting to think about a bridge round."*
@@ -107,7 +107,7 @@ Should load `product-scoping-deck`, recognize the "What would you have to believ
 ### 9. `fundraise-pitch-deck`
 > *"Build a Series B deck for Bessemer. $20M raise, want to position as the next-gen virtual primary care for chronic disease."*
 
-Should load `fundraise-pitch-deck` (NOT the memo skill's investor-update variant — this is a visual deck for a named firm), apply the canonical fundraise arc with the risks-paid-down/underwriting ask framing.
+Should load `fundraise-pitch-deck` (NOT the memo skill's investor-update variant — this is a visual deck for a named firm), apply the canonical fundraise arc with the risks-paid-down/underwriting ask framing. **Validation check:** the output should use $20M / Bessemer / Series B (not stale $6–8M / a16z / Series A numbers from the Sapphire example), AND should pull current Marley numbers (patient count, payer count, PPPM rate) from `pipeline.md` "Most current source-attested numbers" table — not copy-paste 2024 numbers verbatim.
 
 ---
 

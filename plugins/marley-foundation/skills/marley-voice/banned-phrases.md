@@ -5,7 +5,6 @@ Phrases that do not sound like Marley. Replace them or rewrite the sentence. Thi
 ## Generic healthtech / startup-speak — never use
 
 - "patient-centric" / "patient-first" — say what we actually do for patients
-- "best-in-class" / "world-class" used as a self-description (we can say we want to *build* a best-in-class experience; we don't *call ourselves* world-class)
 - "cutting-edge", "state-of-the-art", "next-generation"
 - "innovative solution" / "innovative platform"
 - "disruptive" / "disrupting healthcare"
@@ -13,11 +12,19 @@ Phrases that do not sound like Marley. Replace them or rewrite the sentence. Thi
 - "leverage" as a verb (we can leverage a thing in private; we don't write it in copy)
 - "synergy", "synergies"
 - "holistic" (overused; if we mean "whole patient" say so)
-- "seamless" — overused. Acceptable when literal; replace with "easy" or "frictionless" when not.
-- "robust" — vague
 - "scalable" used as a buzzword (we *will* scale; we don't describe ourselves as scalable in marketing)
 - "transformational" / "transforming healthcare"
 - "the X of healthcare" (e.g. "the Uber of healthcare") — cliché
+
+## Phrases with nuance — fine when grounded, banned when vague
+
+These show up in Marley's own canonical copy (elevator pitches, narrative docs) — so they're not bannable outright. But they're easy to misuse as generic corporate filler. Use only when paired with concrete substantiation; ban when used as standalone self-praise.
+
+- **"world-class"** — fine when modifying a concrete noun with specific evidence: *"a multi-disciplinary, world-class team of experts"* (appears in canonical Marley elevator pitches). Ban when used as a self-description floating alone: *"our world-class platform"*, *"our world-class outcomes"*.
+- **"best-in-class"** — fine when describing aspiration or product intent: *"we want to build a best-in-class experience"*. Ban when used as established self-description: *"we are best-in-class"*.
+- **"seamless"** — fine when describing the actual user experience Marley is building (used in May 2021 narrative: *"seamless patient experiences"*). Ban when used as vague corporate filler with no concrete referent.
+- **"comprehensive"** — actually a Marley-coded word (see [[preferred-phrases]] for proper usage). Don't ban; just make sure it's paired with what's actually being made comprehensive ("comprehensive cardiometabolic care", "comprehensive multi-disciplinary team") rather than free-floating.
+- **"robust"** — fine when describing a concrete system that's been stress-tested: *"a robust direct acquisition engine"* (appears in May 2021 narrative). Ban when used as a vague positive adjective with no substantiation.
 
 ## Corporate hedging — never use
 

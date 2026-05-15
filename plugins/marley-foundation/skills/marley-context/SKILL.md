@@ -1,6 +1,6 @@
 ---
 name: marley-context
-description: Marley Medical's company context — who Marley is, the cardiometabolic-disease thesis, market and ICP, competitive landscape, and current pipeline / operational state. Load for any task that requires Marley-specific positioning, market framing, or current-state knowledge — strategy memos, pitches, partner conversations, market analyses, internal planning.
+description: Marley Medical's company context — virtual-first cardiometabolic medical practice (hypertension, T2D, lipids, obesity), B2C2B GTM strategy, ICP (50-75 year olds with uncontrolled chronic disease), competitive landscape (vs. Galileo / Hello Heart / Livongo / Oak Street), payer strategy, current pipeline (Nov 2022 + March 2024 source snapshots). Used for Marley positioning, market framing, current-state references, partner conversations, ICP discussions, competitive analysis.
 ---
 
 # Marley Context — ambient context for Marley-specific positioning

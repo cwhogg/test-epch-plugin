@@ -1,6 +1,6 @@
 ---
 name: marley-principles
-description: Marley Medical's operating principles, decision frameworks, and founding theses (B2C2B, virtual-first, specialized primary care, "shockingly enjoyable", plans-as-hypotheses). Load whenever any Marley-related task is being discussed, drafted, decided, or evaluated — these principles should shape every Marley artifact.
+description: Marley Medical's operating principles, decision frameworks, and founding theses — B2C2B vs B2B2C, virtual-first specialized primary care, "shockingly enjoyable" patient experience, plans-as-hypotheses, broad-in-network payer strategy. Used for Marley strategy, product, market, positioning, partnership, and hiring decisions.
 ---
 
 # Marley Principles — ambient context

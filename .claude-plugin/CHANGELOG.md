@@ -26,4 +26,37 @@
 
 ---
 
+## v0.2.0 — Self-review pass
+
+Self-review identified 20 high+medium-impact improvements applied in one pass. Major changes:
+
+**Foundation-skill descriptions** — stripped "Load whenever…" imperative tails from all 4 foundation SKILL.md descriptions (`marley-principles`, `marley-voice`, `marley-visual-brand`, `marley-context`). Skill matching is similarity-based against user prompts, so descriptions are now purely descriptive of what the skill contains and what kinds of work it's used for. Should improve trigger reliability.
+
+**`marley-voice` self-contradictions fixed** — `banned-phrases.md` had banned "world-class", "seamless", "robust" as self-descriptions, but those exact words appear in canonical Marley source (elevator pitches, May 2021 narrative). Added a new "Phrases with nuance" section that allows them when grounded with concrete substantiation and bans them only when used as standalone vague filler. Same nuance for "best-in-class" and "comprehensive". Added "comprehensive" and "integrated" to `preferred-phrases.md` as Marley-coded words.
+
+**`memo/SKILL.md`** — Step 1 no longer duplicates trigger phrases inline; now points to `audience-cues.md` as single source of truth. Step 3 disambiguates voice register per variant (standard vs. investor-update register). Step 1 also explicitly flags the general-variant source gap.
+
+**`fundraise-pitch-deck/SKILL.md`** — de-hardcoded Sapphire-specific numbers from Step 3 (was: "$6–8M led by a16z", "13 payers, 77% coverage", "$75 PPPM, 35% margin"). Now references `pipeline.md` for current numbers and `examples/sapphire-march-2024-slide-by-slide.md` for the worked example. Footnote example uses bracketed placeholders.
+
+**`payer-pitch-deck/SKILL.md`** — fixed wrong date in footnote example ("Nov 2023" → bracketed placeholder). Step 4 ("Customize per payer") expanded with concrete payer-family knowledge: BCBS plans are independent licensees, Florida Blue is BCBS FL, Anthem rebrand to Elevance Health 2022, MA-specific framing guidance.
+
+**`chris-critic.md`** —
+- Always-load list trimmed (moved `market.md` and `pipeline.md` to conditional loading; always-load is now just `company.md` plus principles + voice).
+- Added a full variant-awareness block for product-scoping-deck (assumption parallelism, output-metric consistency, math reconciliation, required-attributes filter, honest-about-the-math).
+- Added variant-awareness blocks for payer and fundraise that surface what was previously only in the calling SKILL.md files.
+- Verdict "No" renamed to "Don't ship" for clarity.
+- "Repeating prior critiques" failure mode softened to acknowledge no persistent memory across reviews — only fires when prior critique is passed back as input.
+
+**`product-scoping-deck`** — added `examples/clinical-design-august-2023-slide-by-slide.md` (canonical worked example, parallel to other deck skills' examples files). Fixed awkward Step 2 phrasing.
+
+**`product-scoping-deck/SKILL.md` and `fundraise-pitch-deck/SKILL.md`** — removed inline "critic should pay attention to..." lists that duplicated what chris-critic's own variant-awareness block now covers. Single source of truth for variant-specific scrutiny lives in chris-critic.
+
+**`marley-context/pipeline.md`** — added a "Most current source-attested numbers" summary table at the top, so any artifact pulling current Marley numbers has a single-glance reference.
+
+**`README.md`** — test prompt #5 (general-memo variant) now warns about the source-thin status. Test prompt #9 (fundraise deck) now includes validation criteria for the de-hardcoding fix.
+
+**`marketplace.json`** — added marketplace-level description.
+
+---
+
 When iterating: bump version in `plugins/marley-foundation/plugin.json`, add a new entry here with a brief note on what changed and why.

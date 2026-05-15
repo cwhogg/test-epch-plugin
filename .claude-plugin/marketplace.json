@@ -1,6 +1,7 @@
 {
   "name": "marley-personal",
   "owner": "Chris Hogg",
+  "description": "Chris Hogg's personal Marley Medical plugin marketplace.",
   "plugins": [
     { "name": "marley-foundation", "path": "plugins/marley-foundation" }
   ]

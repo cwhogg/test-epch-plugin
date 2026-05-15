@@ -11,7 +11,7 @@ Distilled from `product decks/`:
 - `narrative-arc.md` — extracted structure (cover → problem → required attributes → methodology → key learnings → scenario walk → appendix).
 - `scope-template.md` — slide-level scenario template, including the "What would you have to believe" pattern.
 - `templates/` — pointer to the PPT master.
-- `examples/` — TBD; the source decks themselves are not directly copyable due to internal numbers; if Chris adds a redacted version of one, this is where it goes.
+- `examples/clinical-design-august-2023-slide-by-slide.md` — canonical worked example. Slide-by-slide reference for the August 2023 Clinical Design and Clinic Capacity Analysis deck, showing the full canonical narrative arc including the signature "What would you have to believe to get to X?" framing applied to 1,200 and 2,000 patient-panel targets.
 
 ## What's NOT in source
 
