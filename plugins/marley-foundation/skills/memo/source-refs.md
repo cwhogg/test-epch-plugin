@@ -26,13 +26,26 @@ Files distilled from these:
 - `examples/investor-update-december-2021.md` — direct excerpt with redactions.
 - `examples/investor-update-may-2022.md` — direct excerpt with redactions.
 
-## General-memo variant
+## General-memo variant (Decision Memo)
 
-**No source exemplar** — the `memos/` folder in source contained:
-- `memos/Marley 2 Pager for BCBS - Feb 13 2024 - Old.pdf` — reclassified to `payer-pitch-deck` per inventory decision.
-- `memos/Marley Medical Series A Memo - v5 - Master - Jan 2024.pdf` — reclassified to `fundraise-pitch-deck` per inventory decision.
+Now well-grounded in source. Distilled from:
 
-Neither is a general internal-strategy memo. The general-memo variant's `format.md` scaffold and `examples/general-placeholder.md` flag this gap and wait for Chris to drop real internal-memo exemplars into the examples folder.
+- `memos/TEMPLATE - Decision Memo.docx` — Marley's own canonical Decision Memo template, authored internally. **Source for `examples/general-template-decision-memo.md`** and for the canonical 7-section structure in `format.md` Variant A: Goal → Stakeholders → Context → Decision → Rationale → Alternatives Considered → Final Decision Date & Decider.
+- `memos/DRAFT Decision Memo - Initial Disease Focus v21.12.13.docx` (Dec 2021) — fully worked Decision Memo example. Sibel Sayiner (Commercial Strategy) Recommending → Joe Slavinsky + David Hubanks (Business + Ops) Agreeing → Chris Hogg Deciding. **Source for `examples/general-decision-memo-disease-focus.md`** and for the practical patterns in Variant A (RAPID stakeholder framing, Desirability/Viability/Feasibility framework named at top of Rationale, table-per-dimension comparative analysis, honest in-line commentary, Alternatives Considered with future-conditional revisiting).
+
+Two prior files in `memos/` are reclassified to other skills:
+- `memos/Marley 2 Pager for BCBS - Feb 13 2024 - Old.pdf` → `payer-pitch-deck`.
+- `memos/Marley Medical Series A Memo - v5 - Master - Jan 2024.pdf` → `fundraise-pitch-deck`.
+
+## Files in `memos/` that are NOT distilled into this skill
+
+These exist in source but are different genres — not Marley-authored decision memos. Documented here for completeness:
+
+- `memos/6 - Marley Medical - Memo on Physician Self-Referral Laws and Anti-Kickback Laws under the Friendly PC Model (October 2021).docx` — **External legal memo** from Foley & Lardner LLP to Marley. Privileged & Confidential. Marley *receives* these; we don't author them.
+- `memos/Memo re Telemedicine Online Services and the ADA Marley (Dec. 2021).pdf` — same genre. External legal memo from Foley & Lardner. Not a Marley-authored exemplar.
+- `memos/Marley Medical - Quality Manual.docx` — internal **standards/policy reference document**, not a memo. Covers product dev, data protection, vendor controls, hiring, RMP, QA Committee. Different artifact genre; doesn't belong in the memo skill.
+
+If a future skill is created for engaging-with-legal-counsel artifacts or for standards/policy documents, these files would be the canonical exemplars there.
 
 ## Redactions applied
 

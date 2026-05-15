@@ -59,4 +59,41 @@ Self-review identified 20 high+medium-impact improvements applied in one pass. M
 
 ---
 
+## v0.3.0 — Memo general-variant rebuild + Decision Framework v1
+
+Two related additions in one pass.
+
+**Fix 1 — Memo general variant rebuilt from real Marley exemplars.** Previously the general-memo variant had a flagged source gap (no canonical internal-strategy memos in source). Chris added 5 files to `memos/`; we used 2 of them (the Marley-authored Decision Memo TEMPLATE and the December 2021 Disease Focus draft) to fully ground the variant. The other 3 (2 inbound Foley & Lardner legal memos, 1 internal Quality Manual) are explicitly excluded as different genres — documented in source-refs.md.
+
+- `memo/format.md` — Variant A fully rewritten. Now anchored in Marley's canonical 7-section Decision Memo structure (Goal / Stakeholders / Context / Decision / Rationale / Alternatives Considered / Final Decision Date & Decider). Investor-update variant untouched.
+- `memo/examples/general-placeholder.md` — deleted (placeholder retired, real exemplars now exist).
+- `memo/examples/general-template-decision-memo.md` — new. Marley's canonical Decision Memo template, distilled with RACI stakeholder block.
+- `memo/examples/general-decision-memo-disease-focus.md` — new. Fully worked example (the December 2021 disease-selection decision). Preserves historical RAPID terminology with a clear "use RACI going forward" note.
+- `memo/SKILL.md` — description tightened to include "decision memo" trigger phrases and name the 7-section structure. Step 1 source-gap warning removed (no longer applies). Files-section updated.
+- `memo/audience-cues.md` — added explicit "Decision Memo" trigger phrases under the general-variant list. Added a new "Adjacent artifact types — route elsewhere" section calling out inbound legal memos and standards documents as not-memos-this-skill-handles.
+- `memo/source-refs.md` — general-variant section now properly populated with the 2 distilled exemplars. The 3 excluded files (2 Foley legal memos + Quality Manual) explicitly documented as different genres.
+- `agents/chris-critic.md` — new memo-general-variant scrutiny block. Checks for: declarative Decision statement, RACI stakeholder block, named framework in Rationale, tables for option comparison, quantitative claims source-tied, alternatives genuinely considered, risks named with mitigants, correct title format.
+
+**Fix 2 — Decision Framework v1 authored by Chris.** Replaces the prior `decision-frameworks.md` placeholder. The 7 questions are Chris's verbatim text; surrounding framing is minimal (cross-references and a RACI/RAPID reconciliation note).
+
+- `marley-principles/decision-frameworks.md` — fully rewritten. The 7 questions (What is the decision / Possible outcomes / Execution requirements / Downsides / Reversibility (two-way vs. one-way door) / Who decides + consulted (RACI) / How we track outcomes). Cross-references to `principles.md`, memo format.md Variant A, and the Disease Focus example.
+- `marley-principles/SKILL.md` — Step 2 of "What to do when this skill loads" now explicitly directs Claude to apply the 7-question framework for any non-trivial decision; walk the user through it if they haven't structured their thinking that way.
+- `marley-principles/source-refs.md` — new "Authored content (not source-distilled)" section recording the framework as Chris-authored on 2026-05-14. Replaces the prior "What's MISSING from source" gap-list with a "single canonical framework — no per-area sub-frameworks" note.
+- `agents/chris-critic.md` — Operational-questions section in primary critique focus expanded with explicit 7-question coverage. The critic now draws operational questions from the framework when reviewing artifacts that involve decisions; surfaces 2–3 questions where the document has a real gap (not all 7 on every artifact).
+
+**RACI as canonical stakeholder frame.** Chris decided RACI (over RAPID) is the going-forward Marley convention for stakeholder authority. Ripple changes applied:
+- Decision Frameworks Q6 reconciliation note positions RACI as canonical, RAPID as historical-only.
+- `memo/format.md` Variant A Section 2 — RAPID frame replaced with RACI frame; historical-convention note added.
+- `memo/examples/general-template-decision-memo.md` — RAPID format reference in Stakeholders section updated to RACI.
+- `memo/examples/general-decision-memo-disease-focus.md` — preserves historical RAPID verbatim (faithful reproduction) with a clear "convention has since changed to RACI" callout at the top.
+- `agents/chris-critic.md` memo-general-variant block — checks for RACI; notes historical RAPID is OK in historical documents.
+
+**Gap closures (vs. v0.2.0).** Two of the seven scaffold-time gaps are now closed:
+- ~~General-memo variant has no real exemplar~~ → closed (template + worked example now distilled from source).
+- ~~`decision-frameworks.md` flags 4 un-formalized frameworks~~ → closed (7-question meta-framework is the single canonical framework; per-area sub-frameworks intentionally not maintained).
+
+Remaining gaps (4): visual-brand defaults validation, payer FAQ/objection-handling, fundraise FAQ/objection-handling, no forward-looking product-vision deck. All require Chris's input or new source artifacts.
+
+---
+
 When iterating: bump version in `plugins/marley-foundation/plugin.json`, add a new entry here with a brief note on what changed and why.

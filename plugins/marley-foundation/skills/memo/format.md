@@ -6,32 +6,99 @@ Both variants share the same Marley voice (see `../marley-voice/voice.md`). The 
 
 ---
 
-# Variant A — General Memo (default)
+# Variant A — General Memo (default) — "Decision Memo"
 
-The general-memo variant is for internal strategy memos, one-pagers, board-update memos, partnership-pitch memos, and any narrative document for an audience that is **not specifically the investor list on a periodic cadence**.
+The general-memo variant is the **Decision Memo** — Marley's canonical format for documenting non-trivial decisions: strategic, operational, organizational, technical. Use it whenever the memo's purpose is to make or document a decision, not just to inform.
 
-## ⚠️ Source-thin variant
-The source folder `memos/` did not contain canonical internal/strategy memo examples — only a payer 2-pager (BCBS) and a fundraise Series A memo, both reclassified to their respective task skills. **The general-memo format below is a sensible scaffold based on Marley's voice and other Marley narrative artifacts. Update it once Chris drops one or two real internal/strategy memos into source.**
+Marley has a written template (`examples/general-template-decision-memo.md`) and a worked-example draft (`examples/general-decision-memo-disease-focus.md`). Read both before drafting.
 
-## Structure (recommended scaffold)
+## Title format
 
-1. **Title** — direct statement of subject. No "Memo:" prefix.
-2. **Opening framing** (2–4 sentences) — what this memo is about and why now. Skip TL;DR/Executive Summary jargon; just write the framing.
-3. **The argument** — body sections, each with a short header. Use 2–5 sections, named for the substantive content, not by structural role ("The market opportunity" not "Background").
-4. **What we're proposing / what we believe** — the recommendation or decision the memo is asking for.
-5. **Open questions / what we'd want feedback on** — explicit list of where the writer is genuinely uncertain.
+`Decision Memo: [question or topic]`
+
+If still in draft, prefix with `DRAFT`: `DRAFT Decision Memo: [topic]`.
+
+## Canonical structure — 7 sections
+
+Use these section headers verbatim. Bare nouns, no question marks, no fluff.
+
+### 1. Goal
+
+Single paragraph (~3–6 sentences). Explain why we're making a decision on this question or topic and how it's important to Marley. Frame the stakes.
+
+> *Example: "For Marley's first launch, we need to deliberately select which disease to support. While we will be able to pivot and expand later, there could be significant time and cost penalties to do so."*
+
+### 2. Stakeholders
+
+Short block. Two parts:
+
+- **Who/what is impacted by this decision** — usually one sentence naming the affected groups.
+- **RACI frame for the decision itself** — explicit named callouts:
+  - *"[Name] (role) is **Responsible**"* — the person doing the work to execute the decision
+  - *"[Name] is **Accountable**"* — the single decider; the person whose call this is
+  - *"[Name], [Name] are **Consulted**"* — people whose input is sought before deciding (have voice, not veto)
+  - *"[Name], [Name] are **Informed**"* — people who need to know the decision after it's made
+
+RACI is Marley's canonical stakeholder frame for new Decision Memos (per `../marley-principles/decision-frameworks.md` Q6). Older Marley memos used a 3-role RAPID abbreviation (Recommending / Agreeing / Deciding) — historical examples are preserved in this format; new memos should use RACI.
+
+### 3. Context
+
+Short framing (~1 paragraph + optional bulleted considerations). Cover:
+- Broader business context for the decision
+- What we've previously decided that connects, or what we'll have to decide in the future based on this
+- The core considerations that matter — when applicable, name them explicitly (e.g. *"Desirability / Viability / Feasibility"*, or whatever framework applies)
+
+### 4. Decision (or "Proposal" in draft state)
+
+The decision as a **declarative statement** — not "we believe we should consider" but *"We should launch in Hypertension."* Pair the declaration with a brief 2–4 sentence summary of "why" — the headline reasoning that the Rationale section will then unpack.
+
+If the memo is still in draft and the decision isn't final, use header "Proposal" instead of "Decision" and frame as a recommendation.
+
+### 5. Rationale
+
+The longest section. Walks through the reasoning that supports the decision. Structure:
+
+- **Name the framework** applied (if any) — e.g. *"Desirability / Viability / Feasibility"*, the 7-question decision framework from `../marley-principles/decision-frameworks.md`, or whatever lens fits. Name it at the top of the section.
+- **For each framework dimension, present the analysis** — usually a **table comparing options across that dimension**. Marley uses tables aggressively here; if the decision involves comparing 3+ options across 3+ criteria, a table is almost always the right move.
+- **Be quantitative** wherever possible. Specific numbers, named sources, dated data.
+- **Honest commentary** is fine and welcomed — *"Afib scored surprisingly low across the board, perhaps due to..."* Plain-language observation in the analysis is on-voice.
+- **Risks and mitigants** — name the risks of the chosen path and how each is mitigated. If a risk has no mitigant, say so directly.
+- **Takeaways** — close the section with a brief synthesis paragraph or summary table that pulls the analysis into the case for the decision.
+
+### 6. Alternatives Considered
+
+Optional but expected for any non-trivial decision. List the realistic alternatives that were not selected. For each:
+- Name the option
+- One short paragraph (2–4 sentences) on what makes it appealing, why it wasn't picked, and any conditions under which it might be revisited
+
+Don't strawman — each alternative should be one a reasonable person could pick. If you find yourself dismissing alternatives in one sentence each, the analysis is shallow.
+
+### 7. Final Decision Date & Decider
+
+Sign-off block. Names + date when the decision was committed. While in draft, this block can be a placeholder.
 
 ## Length
-- One-pager: 400–700 words
-- Strategy memo: 1,000–2,500 words
-- Long-form thought piece: up to 4,000 words; rare
+
+- **Short Decision Memo**: 600–1,200 words. Suitable for tactical decisions with 2–3 alternatives, modest analysis.
+- **Standard Decision Memo**: 1,500–3,000 words. Most strategic decisions land here. Tables and frameworks pull weight.
+- **Deep Decision Memo**: 3,000–5,000 words. Use when the decision deserves heavy analysis (initial-disease-focus type calls, fundraise structure, major partnership commits).
 
 ## Voice notes (specific to this variant)
-- Marley voice (see `../marley-voice/voice.md`)
-- More analytical than consumer copy — facts, numbers, qualified claims
-- Honest about uncertainty: "Our current best guess is…", "We believe but don't yet have evidence…"
-- Numbered lists for open questions
-- Open with the recommendation if it exists; bury the lede only when you genuinely don't have one yet
+
+- Standard Marley voice (see `../marley-voice/voice.md`)
+- More analytical and quantitative than consumer copy
+- **Declarative on the decision** — *"We should launch in Hypertension"*, not "we recommend considering"
+- **Honest on uncertainty** — *"Hypothyroidism scored surprisingly..."*, *"More work is needed to..."*
+- **Tables when comparing options** — almost always the right format for the Rationale section
+- **Name your framework** at the top of Rationale
+- **No "Memo:" prefix on the title** — the format is `Decision Memo: [topic]`, not "Memo: Decision on..."
+
+## What this format is NOT for
+
+- Periodic investor updates → use Variant B instead.
+- Standalone information memos (no decision being made) → consider a one-pager, briefing doc, or just an email. The Decision Memo format is overkill if there's no decision.
+- External-facing communications → drafts for payers, investors, or partners go through the respective deck/pitch skills.
+- Inbound legal/compliance memos from outside counsel — Marley *receives* these; the memo skill is for what Marley *authors*.
 
 ---
 

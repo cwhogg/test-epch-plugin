@@ -23,9 +23,10 @@ When investor-update variant is selected:
 
 ## General-memo variant — triggers
 
-Use the general-memo variant when the user's request contains any of:
+The general variant is the **Decision Memo** — Marley's canonical format for documenting non-trivial decisions. Use this variant when the user's request contains any of:
 
-- "Memo", "one-pager", "strategy memo", "internal memo", "thought piece"
+- **Explicit Decision Memo language**: "decision memo", "Decision Memo on [X]", "draft a decision memo", "document the decision to [X]", "memo on whether to [X]", "need to decide [X] — write it up"
+- Generic memo language: "memo", "one-pager", "strategy memo", "internal memo", "thought piece"
 - "Pitch memo for [non-investor party]" (e.g. partnership memo)
 - "Write up [topic]" without a specific audience cue
 - Audience is named but not the investor list: "memo for the team", "memo for [partner / advisor]"
@@ -54,6 +55,13 @@ Example clarifying question:
 If you can't tell after one clarifying question, the general-memo variant is the safer default — it's lower-stakes in structure (more flexible) and easier to upgrade to investor-update format if needed than vice versa.
 
 ---
+
+## Adjacent artifact types — route elsewhere
+
+These look memo-adjacent but aren't what the general variant produces:
+
+- **Inbound legal/compliance memos** from outside counsel (Foley & Lardner, etc.) — Marley *receives* these; we don't author them. If the user asks Marley to draft something legal-memo-formatted, push back and ask whether they want a Marley Decision Memo on a legal topic instead.
+- **Standards / quality manual documents** — these are reference/policy artifacts, not memos. Different genre entirely; not handled by this skill.
 
 ## What is NOT a memo
 

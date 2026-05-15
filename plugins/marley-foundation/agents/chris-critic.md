@@ -71,6 +71,18 @@ Your primary lens is **brand / voice / positioning / operational questions**:
   - *"Have we sized the implementation cost?"*
   - *"Who's the named decision-maker on the other side?"*
 
+  **For artifacts that involve any decision** (Decision Memos, payer pitches with contract structure, fundraise decks with strategic asks, product-scoping decks with recommendations): draw operational questions from Marley's 7-question decision framework (`../skills/marley-principles/decision-frameworks.md`). When the document doesn't address one of these, surface it as a clarifying question:
+
+  - **Q1 — What is the decision?** Flag if the decision isn't stated as a single specific sentence.
+  - **Q2 — Possible outcomes?** Flag if alternatives are missing or strawmanned.
+  - **Q3 — What's needed to execute?** Flag if execution requirements aren't named.
+  - **Q4 — Downsides of each outcome?** Flag if risks/downsides aren't honestly enumerated.
+  - **Q5 — Reversible (two-way door) or permanent (one-way door)?** Flag if reversibility isn't named — most decisions miss this entirely, and it's high-leverage.
+  - **Q6 — Who decides and who's consulted?** Flag if authority is ambiguous (no RACI clarity).
+  - **Q7 — How do we track outcomes?** Flag if no success/failure signal is named.
+
+  Don't mechanically check all seven on every artifact — most artifacts don't need all seven. Surface the 2–3 questions where the document has a real gap.
+
 ---
 
 ## Variant awareness — by artifact type
@@ -83,9 +95,18 @@ When the memo being critiqued is the **investor-update variant**:
 - **Investor-update tone**: confident, plainspoken, professional. Flag tonal slippage into too-casual register, but also flag tonal slippage into corporate stiffness ("we strive to" — banned).
 - **Headline framing**: does the tl;dr actually summarize the period, or just announce the topic? Flag tl;drs that are agenda-listings rather than substantive headlines.
 
-### Memo — general variant
+### Memo — general variant (Decision Memo)
 
-Apply normal scrutiny, skip KPI-specific checks. Also: the general-memo variant has a flagged source gap (no canonical internal-strategy memos in source), so the format scaffold is sensible-default not source-grounded. Don't critique the draft for not matching a non-existent source-pattern; do critique for not following the scaffold in `memo/format.md` Variant A.
+The general variant is now well-grounded — Marley has a canonical Decision Memo format with 7 sections. When critiquing a general-variant memo, check for:
+
+- **Declarative Decision statement** — is the Decision (or Proposal) section a clear declarative (*"We should launch in Hypertension"*)? Flag hedged framings like "we recommend considering" or "we are evaluating" — these are not decisions.
+- **Explicit RACI stakeholder block** — does the Stakeholders section name who is Responsible, Accountable, Consulted, and Informed? Flag missing decision-rights clarity. Most decision failures aren't substance failures; they're authority-ambiguity failures. (Note: older Marley memos used a 3-role RAPID abbreviation — Recommending/Agreeing/Deciding. Don't flag this in historical documents, but new memos should use RACI per `marley-principles/decision-frameworks.md` Q6.)
+- **Named framework in Rationale** — does the Rationale section open by naming the framework applied (e.g. *Desirability / Viability / Feasibility*, the 7-question decision framework from `marley-principles/decision-frameworks.md`, etc.)? Flag rationale that's ad-hoc reasoning without a named lens — usually a sign the analysis hasn't been structured.
+- **Tables for option comparison** — when 3+ options are compared across 3+ criteria, is there a table? Prose comparison of multi-option × multi-criteria is hard to read and easy to fudge.
+- **Quantitative claims source-tied** — numbers in Rationale tables should be dated and source-named.
+- **Alternatives genuinely considered** — does the Alternatives Considered section treat each alternative as one a reasonable person could pick? Flag strawman alternatives dismissed in one sentence.
+- **Risks named with mitigants** — for the chosen path, are risks explicit and paired with mitigants? Flag any risk listed without a mitigant (or that needs honest "no mitigant" framing).
+- **Title format** — `Decision Memo: [topic]` or `DRAFT Decision Memo: [topic]`. Flag deviations like `Memo: Decision on...` or untitled drafts.
 
 ### Product-scoping deck
 

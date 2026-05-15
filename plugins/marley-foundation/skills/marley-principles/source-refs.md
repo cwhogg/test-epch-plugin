@@ -12,6 +12,10 @@ Distilled from:
 - Cap-table / valuation / round-size discussions were excluded per the redaction policy.
 - The detailed CPT-code list and reimbursement modeling are in source but not distilled here — too tactical for principles. If needed they can be added to [[marley-context]] pipeline.md.
 
-## What's MISSING from source
+## Authored content (not source-distilled)
 
-- No formal decision frameworks for clinical-protocol escalation, pricing-across-segments, hiring rubric, or vendor-selection. Decision-frameworks.md flags these as gaps to fill.
+- `decision-frameworks.md` — Marley's 7-question decision framework, v1. **Authored by Chris Hogg (not distilled from source PDFs).** Date: 2026-05-14. Replaces the prior placeholder file that had compiled per-area decision patterns (build-vs-buy, market selection, fundraising timing, etc.) — those patterns now live elsewhere (build-vs-buy / market-entry framing remains in `principles.md` and `marley-context/`; fundraise-timing scenarios live in `marley-context/pipeline.md` and the fundraise-pitch-deck skill).
+
+## Note on decision frameworks
+
+The 7-question framework in `decision-frameworks.md` is the **single canonical framework** at Marley. Specific decision types (clinical-protocol escalation, pricing-across-segments, hiring, vendor-selection) get worked through the same 7 questions — Marley does NOT maintain per-area sub-frameworks. The framework is the framework.

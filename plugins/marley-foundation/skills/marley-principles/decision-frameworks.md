@@ -1,69 +1,39 @@
-# Decision Frameworks
+# Marley decision framework
 
-Recurring decisions Marley faces, and the lens we apply to each. These are drawn from how the company has actually decided things in its source docs — they are not generic startup frameworks.
+## When to use this framework
+Use this framework whenever Marley makes a non-trivial decision — strategic, operational, organizational, technical. It applies equally to "should we hire this person", "should we contract with this payer", "should we build this feature in-house", "should we change our pricing model". For trivial decisions (reversible, low-stakes, narrow scope), this is overkill — apply judgment about when the rigor is worth the time.
 
----
+## The 7 questions
 
-## Build vs. buy / partner vs. own
+For any significant decision, walk through these in order. Write the answers down — that's the decision memo.
 
-From the founding concept doc: *"We will not build all of the above components upfront. We will look to accelerate development of a v1 product via partnerships and by leveraging off the shelf products and services. We will quickly learn and evaluate the core components we need to own over time. The tradeoff for speed will be the cost of goods, which we will bring down over time as we vertically integrate functions and supply lines."*
+### 1. What is the decision?
+Define it in a single sentence — be specific. Generic framings ("how should we approach X") produce generic answers. Sharp framings ("how do we price for self-funded employers vs. fully-insured payers given our 2026 cost structure") produce sharp answers. If you can't write the decision in one specific sentence, you don't yet know what you're deciding.
 
-The rule:
-1. **Start by buying/partnering** for v1. Speed of learning > cost.
-2. **Own** what materially changes the patient experience or the unit economics over time.
-3. **Be honest about the duct tape.** From a May 2022 investor update: "Lots of duct tape." Acknowledge what's stitched together; plan to replace it.
+### 2. What are the possible outcomes?
+Enumerate the realistic options. Don't strawman — each option should be one a reasonable person could pick. Usually 2–4 options. If there's only one option, you don't have a decision to make; if there are more than 5, you haven't done the work to narrow down.
 
-## How to pick which market/state to enter next
+### 3. What is needed to execute each outcome?
+For each option: what resources, time, dependencies, capabilities does it require? This is where unrealistic options get filtered — an option that requires capacity Marley doesn't have isn't really an option.
 
-From multiple investor updates: states are evaluated on a **value × effort** matrix.
+### 4. What are the main downsides of each possible outcome?
+For each option: what could go wrong, and what's the impact on the rest of the business? Be honest about second-order effects — a pricing change has implications for sales motion, brand positioning, and customer trust. A vendor choice has implications for hiring, integration cost, and switching cost. Naming the downsides explicitly is how you avoid surprise later.
 
-- **Value:** patient volume (segment size in state) × payer concentration (fewer payers = simpler contracting)
-- **Effort:** licensing/regulatory timeline × operational lift to launch
+### 5. Is the decision reversible (two-way door) or permanent (one-way door)?
+Two-way door: if we're wrong, we can change course in weeks or months at modest cost. One-way door: reversal is expensive, slow, or impossible. Two-way doors should be made fast — speed matters more than perfect choice. One-way doors deserve more analysis, more consultation, and a higher bar of confidence before committing.
 
-Build out a regional "pod" before scattering nationally — pod creates clinical-team scale, brand concentration, and a coherent geography for payer conversations.
+### 6. Who decides, and who needs to be consulted?
+Be explicit about authority (RACI: who is Responsible, Accountable, Consulted, Informed). Most decision failures aren't about the substance — they're about ambiguity over who actually had the call. Name the decider. Name who needed to weigh in but didn't have veto. Name who needs to know after.
 
-## How to think about fundraising timing
+> **Note on stakeholder frames:** RACI (Responsible / Accountable / Consulted / Informed) is the canonical Marley frame going forward — use this in new Decision Memos. Older Marley artifacts (notably the December 2021 *Disease Focus* draft) used a 3-role RAPID abbreviation (Recommending / Agreeing / Deciding); preserved verbatim in `../memo/examples/general-decision-memo-disease-focus.md` for historical reference, but not the going-forward convention.
 
-From the May 2022 update — the four scenarios are explicit:
-
-1. **Wait and run the normal path** — start raise 9–12 months before cash out. Risk: don't know what the market will be like by then.
-2. **Raise more now from insiders + angels** — buy 12–18 extra months at current burn. Raise on the team and the build, not on patient acquisition.
-3. **Raise a proper Series A now** — possible? at what valuation? desirable?
-4. **Raise more and grow faster** — capitalize on availability of talent while others retrench. Possible, but not always desirable.
-
-The decision lens: how much cash runway do we have, what evidence do we have to raise on, and what does the market reward right now?
-
-## Patient-acquisition channel decisions
-
-Marley's GTM doc lays out the channel × payment matrix:
-
-|                            | Patient pays   | Payer/employer pays    |
-|---                         |---             |---                     |
-| **Direct (online)**        | Ro/Hims/Nurx   | "Holy grail" — needs near-universal reimbursement  |
-| **Payer/employer (lists)** | —              | Livongo/Omada path (B2B2C) |
-| **Provider (referral)**    | Cash specialty | Pharma/medtech path    |
-
-Marley targets the **direct → payer-pays** square (the "holy grail"). To unlock it: become broadly in-network so directly-acquired patients can be billed through standard codes.
-
-## How we frame *what's working* vs. *what's not*
-
-From the investor updates, the pattern is consistent: lead with what's true, including the uncomfortable parts.
-
-- If patient acquisition is hard: say it's hard.
-- If the launch slipped 2.5 weeks: say so, name why (legal + insurance issues).
-- If team morale is good: say so without inflating.
-- Frame open problems as worth solving, with concrete next experiments — don't hide them.
-
-This is the same principle as [[principles]] #12 applied to investor comms.
+### 7. How do we track outcomes?
+What metric or signal tells us in 30/90/180 days whether the decision was right? Without this, we don't learn — we just keep deciding. The tracking commitment is part of the decision; if you can't articulate how you'll know, you're not really committed to evaluating.
 
 ---
 
-## What this file does NOT yet cover
+## Cross-references
 
-The source docs do not formalize frameworks for:
-- Clinical-protocol decisions (when to escalate to in-person, what triggers a specialist referral)
-- Pricing decisions across segments
-- Talent / hiring tradeoffs (we mention "best initial team is determinant of success" but no rubric)
-- Vendor selection criteria beyond build/buy
-
-If you (Chris) want to formalize any of these, drop notes into this file and they'll get incorporated.
+- `principles.md` — the 12 operating principles that should shape *what's considered* in any decision. The framework above is the *process*; the principles are the *content* that informs each answer.
+- `../memo/format.md` (Variant A — Decision Memo) — the Rationale section of a Marley Decision Memo should walk through this framework explicitly. Name "the 7-question decision framework" at the top of Rationale; structure the section around the seven answers.
+- `../memo/examples/general-decision-memo-disease-focus.md` — worked example of a Marley Decision Memo. Note the framework used in that memo is *Desirability / Viability / Feasibility* (a different lens — that was a market-fit decision, not a generic decision). The 7-question framework is the meta-framework that applies regardless of which substantive framework gets named inside Rationale.

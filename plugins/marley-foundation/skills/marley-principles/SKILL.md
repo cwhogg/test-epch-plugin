@@ -14,13 +14,13 @@ Whenever the conversation touches Marley Medical — strategy, product, market, 
 ## What to do when this skill loads
 
 1. **Read [[principles]]** — the 12 operating principles. Familiarize yourself with the language and the reasoning so the output you produce sounds like Marley reasoning, not generic strategy reasoning.
-2. **Read [[decision-frameworks]]** — recurring decision patterns (build-vs-buy, market selection, fundraising timing, etc.) and how Marley applies them.
+2. **Read [[decision-frameworks]]** — Marley's 7-question decision framework. Apply it explicitly whenever the user is making any non-trivial decision (strategic, operational, organizational, technical). If the user has not yet structured their thinking through the 7 questions, walk them through the framework before producing a recommendation.
 3. **Apply the principles judgment-fully.** Don't quote them mechanically; let them shape what you say, what you build, what you recommend.
 
 ## Files
 
 - `principles.md` — the 12 numbered principles, each with elaboration.
-- `decision-frameworks.md` — recurring decision patterns and the lens Marley applies.
+- `decision-frameworks.md` — Marley's 7-question decision framework (v1, authored by Chris). The meta-process applied to every non-trivial Marley decision.
 - `source-refs.md` — which source docs each principle was distilled from.
 
 ## Cross-references
