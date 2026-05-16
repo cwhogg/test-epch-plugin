@@ -3,6 +3,6 @@
   "owner": { "name": "Chris Hogg" },
   "description": "Chris Hogg's personal Marley Medical plugin marketplace.",
   "plugins": [
-    { "name": "marley-foundation", "source": "./plugins/marley-foundation" }
+    { "name": "marley-foundation", "source": "./plugins/marley-foundation", "version": "0.5.0" }
   ]
 }
