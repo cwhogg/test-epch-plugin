@@ -59,6 +59,32 @@ Self-review identified 20 high+medium-impact improvements applied in one pass. M
 
 ---
 
+## v0.4.0 — Per-slide visual specificity + named layouts vocabulary
+
+End-to-end test of the payer-pitch-deck skill via Claude Cowork surfaced two visual-design weaknesses: generated decks used uniform layouts (mostly one-column text blocks) and named no specific brand assets per slide (generic "a clinical icon", "a hero photo"). Root cause: the visual-brand skill documented *what* the brand contains but never gave Claude a vocabulary for *how to compose with it* per slide. This release adds that vocabulary and makes per-slide visual specification required.
+
+**Foundation — `marley-visual-brand`**
+- New file `layouts.md` — extracts the 13 raw PPT layouts from `Marley_Presentation_MasterTemplate.pptx` and collapses them to **7 conceptual layout types** (`TITLE_FAMILY`, `TITLE_AND_BODY`, `TITLE_1_2` 2-panel, `SECTION_DIVIDER`, `HERO_STATS`, `CUSTOM`, `BLANK`). Each entry includes canonical PPT layout name(s), description, when-to-use guidance, palette pairings, and asset-pairing hints. Includes a deck-level layout-diversity rule (≥4 distinct layouts across a ~25-slide deck).
+- `SKILL.md` — description updated to mention "7 named slide layout types"; load step added for `layouts.md`; files section updated.
+- `colors.md` — added "Deck-level palette diversity" section with target distribution (~40% Cream / ~25% Peach / ~25% Sky / ~10% Red-accent) and a slide-type → surface quick-reference table.
+- `image-style.md` — replaced the bare list of 13 icons with a **semantic icon mapping table** (one row per icon: SVG filename + when-to-use), with the 4 highest-frequency icons bolded (`Marley_blood_pressure.svg`, `Marley_heart.svg`, `Marley_pill.svg`, `Marley_stethoscope.svg`). Same treatment for the 7 marketing photos (JPG filename + when-to-use). New "Don't refer to assets generically" rule — always name the file.
+- `source-refs.md` — noted the .pptx-as-zip XML extraction and the 13→7 collapse; flagged that pattern guidance is punted until exported PNGs exist; flagged that semantic mappings are extrapolated from observed practice, not from a brand-agency mapping document.
+
+**Task skill — `payer-pitch-deck`**
+- `SKILL.md` Step 2 loads `layouts.md`. Step 3 has a new "Per-slide visual specification (required)" subsection mandating Layout / Surface / Icon / Photo / Logo per slide, with layout-diversity (≥4 distinct) and palette-diversity targets.
+- `narrative-arc.md` — every slide across all 3 acts (cover, hero stats, PCP-burden, new-category, panel-profile, patient-journey, engagement metrics, patient case, clinical results, payer-needs 2-col pivot, easy-to-work-with, three-stages, three-contracting-structures + visualizations, thank-you, plus appendix) now includes a "Visual spec" block naming the layout, surface color, semantic icon (when applicable), hero photo (when applicable), and logo lockup variant.
+- `examples/bcbs-fl-march-2024-slide-by-slide.md` — retrofitted 5 representative slides with full Visual spec blocks (cover, hero stats, patient journey hero photo, patient case timeline, payer-needs pivot) to demonstrate the convention on the canonical reference deck.
+- `templates/README.md` — added a workflow step tying PowerPoint's Slide Layout panel names to `layouts.md`.
+
+**Sub-agent — `chris-critic`**
+- "Any deck" conditional-load list now includes `image-style.md` and `layouts.md`.
+- New "Any deck — visual specificity" variant-awareness block checks: layout named per slide, layout diversity (≥4 distinct), surface named per slide, palette diversity (no >70% single color), assets named by filename, asset semantic fit per `image-style.md` mapping.
+- Diagnostics output template gains `Visual specificity (decks only): pass / partial / fail` line.
+
+**What this doesn't do (deferred):** fundraise-pitch-deck and product-scoping-deck per-slide annotations (they benefit transitively from the foundation changes — `layouts.md`, semantic icon/photo mappings, palette diversity rule — but their own narrative-arc files weren't retrofitted this pass). Pattern guidance still punted (no exported PNG patterns in source). Per-slide font sizing intentionally not duplicated (typography.md owns the scale).
+
+---
+
 ## v0.3.2 — Plugin directory structure + YAML frontmatter fixes
 
 Three issues uncovered by `claude plugin validate` that were causing Cowork's "Marketplace sync failed":

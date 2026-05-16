@@ -67,6 +67,37 @@ For digital work always use the RGB hex. For print files use CMYK from the `.ccl
 
 ---
 
+## Deck-level palette diversity
+
+A common failure mode is decks that use one surface color throughout (almost always cream-on-purple). The master PowerPoint template ranges across the palette deliberately — generated decks should too. A well-composed Marley deck distributes across surfaces approximately like this:
+
+| Surface | Target % of slides | Slide types that fit |
+|---|---|---|
+| **Cream** (`#FDF7EF`) | ~40% | Default canvas. Most TITLE_AND_BODY narrative slides, headers, table-heavy slides. |
+| **Peach** (`#FFDFD6`) | ~25% | Empathetic, human-story, patient-narrative slides. Care-team slides. Quote slides. |
+| **Sky** (`#C9E5FC`) | ~25% | Clinical, data-evidence, outcomes, technical slides. HERO_STATS for clinical metrics. |
+| **Red accent** (`#FF4E1E`) | ~10% | High-stakes moments: section dividers, "the ask" slides, urgency/CTA slides. Rarely a full background — usually accent strips, callouts, single-stat highlights. |
+| **Purple full-bleed** (`#5A38B2`) | rare | Cover slide, occasional high-impact SECTION_DIVIDER. White reverse type. Not a body-content surface. |
+
+**Diversity rule:** if >70% of a deck's slides use a single surface color, the deck is too uniform. Mix it up. The most common failure is "everything is Cream" — break this by routing patient-story slides to Peach, data slides to Sky, and at least one SECTION_DIVIDER to Purple full-bleed or Red.
+
+This is a chris-critic check on every deck draft (see the `Visual specificity` diagnostic in the critic).
+
+## When to use which color — slide-type quick reference
+
+| Slide type | Surface | Accent / type |
+|---|---|---|
+| Cover / TITLE_FAMILY | Purple full-bleed OR Cream | White reverse / Purple type |
+| Standard narrative (TITLE_AND_BODY) | Cream | Purple type, accent icon in Sky or Peach |
+| Patient story / care-team / empathetic | Peach | Purple type, optional warm photo |
+| Data / clinical / outcomes (HERO_STATS, TITLE_AND_BODY) | Sky | Purple type, Red accent on one hero stat |
+| 2-panel pivot (TITLE_1_2) | Peach left / Sky right (or Cream/Sky) | Purple type, paired icons |
+| Act transition (SECTION_DIVIDER) | Rotate — Purple full-bleed, Red, Peach, or Sky | White reverse on dark surfaces; Purple on light |
+| The ask / high-stakes call | Red accent or Purple full-bleed | White reverse |
+| Hero photo (BLANK) | Image is surface | White reverse type if needed |
+
+---
+
 ## See also
 
 - `assets/logos/` — wordmark + monogram SVGs in all six color treatments.

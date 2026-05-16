@@ -17,12 +17,14 @@ Distilled from `visual brand/Brand Assets/`:
 - `Marley Typography/Primary Fonts/Reckless/` — full Reckless font family with licenses (Desktop + Web). Source for [[typography]].
 - `Marley Typography/Primary Fonts/Greycliff_Adobe Fonts.txt` — note about Greycliff being licensed via Adobe Fonts. Source for [[typography]].
 - `Marley Typography/Backup Fonts/Newsreader/`, `Backup Fonts/Poppins/` — backup font files noted in [[typography]].
-- `Marley_Presentation_MasterTemplate.pptx` — PowerPoint master template. Referenced as a structural source for `payer-pitch-deck/templates/`, `product-scoping-deck/templates/`, and `fundraise-pitch-deck/templates/` (linking strategy rather than parsing the XML, since the binary template is canonical).
+- `Marley_Presentation_MasterTemplate.pptx` — PowerPoint master template. Referenced as a structural source for `payer-pitch-deck/templates/`, `product-scoping-deck/templates/`, and `fundraise-pitch-deck/templates/`. **Layout vocabulary in `layouts.md` was extracted from this file on 2026-05-16 via .pptx-as-zip XML inspection.** The 13 raw PPT layout names (CUSTOM, TITLE, TITLE_1, TITLE_3, TITLE_1_2, TITLE_AND_BODY, TITLE_ONLY, SECTION_TITLE_AND_DESCRIPTION + 4 variants, BLANK) were collapsed to 7 conceptual layout types (TITLE_FAMILY, TITLE_AND_BODY, TITLE_1_2, SECTION_DIVIDER, HERO_STATS, CUSTOM, BLANK) for usability — the raw layout names remain addressable as sub-variants in `layouts.md`.
 
 ## What's NOT in source
 
 - No formal brand book PDF spelling out color usage rules, clear-space rules, type scale, or photography direction. The rules in [[colors]] / [[logo-usage]] / [[typography]] / [[image-style]] are extracted from observed practice + standard brand-system convention, not from a written brand book.
 - Color names ("Marley Purple", "Marley Red", etc.) are derived from logo asset filenames — the Adobe library identifies colors only by hex.
+- **Pattern guidance is thin** — the `.ai` pattern template exists in `Brand Assets/Marley Patterns/` but no exported PNG/SVG patterns. `image-style.md` notes pattern use in general terms but doesn't specify named pattern assets. Punted to a future iteration if/when pattern PNGs get exported.
+- **Semantic icon and photo mappings in `image-style.md`** are extrapolated from how Marley actually uses these assets in source decks plus standard brand-system convention. Not from an explicit brand-agency mapping document.
 
 ## Confidentiality
 

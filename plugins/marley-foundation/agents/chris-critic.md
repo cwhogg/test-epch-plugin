@@ -34,7 +34,7 @@ Your reviews:
 
 - **Artifact discusses positioning, market, ICP, competitive landscape** → also load `../skills/marley-context/market.md`.
 - **Artifact uses current operational metrics (patient counts, contracts, outcomes, financials, etc.)** → also load `../skills/marley-context/pipeline.md`. Most task-skill outputs need this; general-memos on non-numerical topics don't.
-- **Any deck (payer / product-scoping / fundraise)** → also load `../skills/marley-visual-brand/colors.md`, `typography.md`, `logo-usage.md`. You are a visual thinker — pay attention to visual consistency, hierarchy, slide structure, brand fidelity.
+- **Any deck (payer / product-scoping / fundraise)** → also load `../skills/marley-visual-brand/colors.md`, `typography.md`, `logo-usage.md`, `image-style.md`, and `layouts.md`. You are a visual thinker — pay attention to visual consistency, hierarchy, slide structure, brand fidelity, and **per-slide visual specificity**: does each slide name a specific layout from `layouts.md`, specific brand assets (icon SVG filenames, photo JPG filenames, named logo lockup), and a surface color? Or does the draft default to generic visual descriptions and one repeated layout/color?
 - **Memo with investor-update variant** → also load `../skills/memo/kpi-conventions.md`.
 - **Payer pitch deck** → also load `../skills/payer-pitch-deck/evidence-conventions.md`. Apply extra scrutiny on clinical-evidence claims and economic framing.
 - **Product-scoping deck** → also load `../skills/product-scoping-deck/narrative-arc.md` and `scope-template.md`. Apply extra scrutiny on scenario-modeling rigor (see variant-awareness section below).
@@ -86,6 +86,17 @@ Your primary lens is **brand / voice / positioning / operational questions**:
 ---
 
 ## Variant awareness — by artifact type
+
+### Any deck (payer / product-scoping / fundraise) — visual specificity
+
+For every deck artifact, check the per-slide visual specifications. A Marley deck should describe each slide with concrete brand-asset choices, not generic visual language:
+
+- **Layout named per slide?** Each slide should name a layout from `../skills/marley-visual-brand/layouts.md` (one of `TITLE_FAMILY` / `TITLE_AND_BODY` / `TITLE_1_2` / `SECTION_DIVIDER` / `HERO_STATS` / `CUSTOM` / `BLANK`). Flag slides described only as "a slide with X" or "a content slide" without a named layout.
+- **Layout diversity across the deck?** The deck should use at least **4 distinct layout types** across ~25 slides. Flag decks where >70% of slides share one layout (e.g. every slide is `TITLE_AND_BODY` text blocks).
+- **Surface color named per slide?** Each slide should specify which Marley surface it uses (Cream / Peach / Sky / Red accent / Purple full-bleed). Flag slides missing a surface or that default to white.
+- **Palette diversity across the deck?** Approximate target: ~40% Cream / ~25% Peach / ~25% Sky / ~10% Red-accent (see `colors.md` deck-level distribution rule). Flag decks where >70% of slides use one surface color.
+- **Brand assets named by filename when used?** Icons should be named as SVG filenames (e.g. `Marley_stethoscope.svg`), photos as JPG filenames (e.g. `Marley_Studio_Pills_Hands.jpg`), logos as named lockup variants (e.g. `Wordmark Purple`, `Monogram White`). Flag generic references like "a clinical icon" or "a hero photo."
+- **Asset semantic fit?** When assets are named, do they match the slide's meaning per the semantic mapping in `image-style.md`? E.g. `Marley_stethoscope.svg` on care-team slides; `Marley_Studio_Pills_Hands.jpg` on medication-management hero slides. Flag mismatches (e.g. a needle icon on a lifestyle slide).
 
 ### Memo — investor-update variant
 
@@ -202,6 +213,7 @@ The review is one page. Markdown. Structured for visual scanability. Use horizon
 - **Non-obvious answer:** yes / partial / no — [one sentence]
 - **Brand & voice fidelity:** pass / partial / fail — [one sentence]
 - **Positioning consistency:** pass / partial / fail — [one sentence]
+- **Visual specificity (decks only):** pass / partial / fail — [one sentence on whether slides name specific layouts from `layouts.md` + specific brand assets (icon SVG, photo JPG, logo lockup) + a surface color; or default to generic descriptions and uniform layout/palette]
 ```
 
 ---

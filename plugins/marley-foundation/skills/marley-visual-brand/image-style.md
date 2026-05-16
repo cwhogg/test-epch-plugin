@@ -8,9 +8,30 @@ The Marley visual style has three image categories: **iconography**, **photograp
 
 ## Iconography
 
-Marley has a custom icon set of **13 hand-drawn icons** representing the clinical / wellness world Marley operates in:
+Marley has a custom icon set of **13 hand-drawn icons** representing the clinical / wellness world Marley operates in. Each icon has a **semantic mapping to slide types** — reference icons by their canonical SVG filename when describing slide assets:
 
-Apple · Bandage · Blood droplet · Blood pressure · Cross · Exercise · Heart · Needle · Pill · Scale · Sleep · Stethoscope · Stress · Tablet
+| Icon | SVG filename | Use for slide types involving… |
+|---|---|---|
+| Apple | `Marley_Apple.svg` | Nutrition, diet, lifestyle, healthy eating |
+| Bandage | `Marley_Bandage.svg` | Injury, acute care, recovery, wound-care |
+| Blood droplet | `Marley_Blood_droplet.svg` | Labs, blood work, blood draws, sample collection |
+| Blood pressure | `Marley_blood_pressure.svg` | **BP monitoring, hypertension management, RPM device, BP outcomes** (primary clinical icon for Marley) |
+| Cross | `Marley_cross.svg` | General medical / clinical / hospital references |
+| Exercise | `Marley_excercise.svg` *(note: misspelled in source)* | Physical activity, lifestyle change, behavioral intervention |
+| Heart | `Marley_heart.svg` | **Cardiovascular outcomes, CV events, stroke/CHF risk-reduction stats** |
+| Needle | `Marley_needle.svg` | Injectables, vaccines, blood draws (clinical-procedure slides) |
+| Pill | `Marley_pill.svg` | **Medication management, polypharmacy, adherence, mail-order Rx** |
+| Scale | `Marley_scale.svg` | Weight, obesity management, weight-meds slides |
+| Sleep | `Marley_sleep.svg` | Sleep, stress, behavioral health |
+| Stethoscope | `Marley_stethoscope.svg` | **Clinical credibility, care-team slides, data-driven care model, multi-disciplinary team** |
+| Stress | `Marley_stress.svg` | Mental health, anxiety, stress's effect on BP |
+| Tablet | `Marley_tablet.svg` | Medication (paired with pill), digital tablet/device |
+
+**The 4 highest-frequency icons** for Marley payer/fundraise decks are bolded — they should appear most often:
+- `Marley_blood_pressure.svg` — anchors any BP/RPM/clinical-monitoring slide
+- `Marley_heart.svg` — CV outcomes, risk-reduction
+- `Marley_pill.svg` — medication-management thesis
+- `Marley_stethoscope.svg` — care team, clinical credibility
 
 Style:
 - **Line-based, hand-drawn feel.** Not flat / geometric — these have weight and gesture.
@@ -22,13 +43,15 @@ Use icons:
 - To accent a deck slide section opener
 - To create visual rhythm in long-form content
 - Locked with the wordmark to make an icon-logo
+- **Always name the SVG filename** when specifying an icon in a slide — e.g. "locked top-left with `Marley_stethoscope.svg` (purple variant)", not "with a clinical icon"
 
-Files: `assets/icons/Marley_<Name>.svg` (14 files copied — 13 icons + a `blood_pressure` variant).
+Files: `assets/icons/Marley_<Name>.svg` (14 files copied to plugin — 13 icons + a `blood_pressure` variant).
 
 Don't:
 - Mix Marley icons with stock icons from other libraries in the same surface
 - Re-color icons outside the brand palette
 - Use the icons at sizes where line weight becomes uneven
+- Refer to icons generically ("an icon", "a heart icon") — always name the file
 
 ---
 
@@ -51,13 +74,18 @@ Use:
 - Author bylines
 
 ### Marketing photos — warm studio
-**7 studio marketing photos** with a consistent palette and styling (`Marley Photography/Marketing photos/`):
 
-- `Marley_Studio_1.jpg`, `Marley_Studio_2.jpg`, `Marley_Studio_3.jpg` — studio compositions
-- `Marley_Studio_Blood Samples.jpg` — clinical sampling shot
-- `Marley_Studio_Instruments.jpg` — instrument arrangement
-- `Marley_Studio_Pills_Hands.jpg` — pills + hands close-up
-- `Marley_Nurse_bruno-rodrigues_unsplash.jpg` — sourced nurse shot from Unsplash
+**7 studio marketing photos** with a consistent palette and styling (`Marley Photography/Marketing photos/`). Each has a **semantic mapping** — reference by filename when specifying slide hero imagery:
+
+| Photo | Filename | Use for slide types involving… |
+|---|---|---|
+| Studio composition (general) | `Marley_Studio_1.jpg` | Cover slides, generic hero moments, opening section dividers |
+| Studio composition (warm) | `Marley_Studio_2.jpg` | Empathetic moments, patient-experience slides, peach-toned sections |
+| Studio composition (clean) | `Marley_Studio_3.jpg` | Clinical credibility slides, professional / cool sections |
+| Blood samples close-up | `Marley_Studio_Blood Samples.jpg` | Lab/diagnostic slides, clinical-evidence sections, RPM data discussion |
+| Instruments arrangement | `Marley_Studio_Instruments.jpg` | Clinical tooling, multi-disciplinary care team slides, what-we-do composition slides |
+| Pills + hands close-up | `Marley_Studio_Pills_Hands.jpg` | **Medication management, mail-order Rx, polypharmacy, adherence slides — the primary "what Marley does" hero photo** |
+| Nurse photo (Unsplash) | `Marley_Nurse_bruno-rodrigues_unsplash.jpg` | Care-team slides, "your team of experts" sections, human-led moments |
 
 Style cues:
 - **Warm, natural light** — never harsh studio strobes
@@ -78,6 +106,7 @@ Don't:
 - Use stock photography that doesn't match this palette and lighting style
 - Mix the B&W headshot register with the color marketing register in the same surface
 - Use cold, blue-cast clinical photography — Marley's photography is warm
+- Refer to photos generically ("a hero photo", "a clinical photo") — always name the file
 
 ---
 

@@ -24,6 +24,7 @@ Before drafting:
 - Read `../marley-voice/banned-phrases.md`
 - Read `../marley-context/company.md`, `market.md`, and `pipeline.md` — current-state numbers matter
 - Read `../marley-visual-brand/colors.md`, `typography.md`, `logo-usage.md`, `image-style.md` — payer decks are visual artifacts; brand fidelity matters
+- **Read `../marley-visual-brand/layouts.md` — the 7 named slide layout types. Every slide in the generated deck must name a specific layout from this file (TITLE_FAMILY / TITLE_AND_BODY / TITLE_1_2 / SECTION_DIVIDER / HERO_STATS / CUSTOM / BLANK).**
 
 ## Step 3 — Draft
 
@@ -37,6 +38,20 @@ Apply [[evidence-conventions]] for clinical and economic claims — cite specifi
 Reference `examples/bcbs-fl-march-2024-slide-by-slide.md` for the canonical structure and slide-level content patterns.
 
 Use the master PPT template at `~/epch-claude/visual brand/Marley_Presentation_MasterTemplate.pptx` as the visual starting point.
+
+### Per-slide visual specification (required)
+
+Each slide description in the generated deck **must** name:
+
+1. **Layout** — one of the 7 named layouts from `../marley-visual-brand/layouts.md` (e.g. `Layout: TITLE_1_2 (2-panel)`). Generic descriptions like "a slide with hero stats" are not acceptable — name the layout.
+2. **Surface (color)** — which Marley color the slide uses (Cream / Peach / Sky / Red accent / Purple full-bleed). Reference `../marley-visual-brand/colors.md` deck-level-palette-diversity rules — don't default everything to Cream.
+3. **Icon (when applicable)** — specific SVG filename from `../marley-visual-brand/image-style.md` semantic icon mapping (e.g. `Marley_stethoscope.svg`, `Marley_heart.svg`). Not "a clinical icon."
+4. **Photo (when applicable)** — specific JPG filename from `../marley-visual-brand/image-style.md` semantic photo mapping (e.g. `Marley_Studio_Pills_Hands.jpg`). Not "a hero photo."
+5. **Logo lockup (when applicable)** — wordmark / monogram / icon-locked, with color variant (e.g. `Wordmark Purple` for cover, `Monogram White` for image-overlay).
+
+**Layout-diversity target:** the generated deck should use **at least 4 distinct layout types** across its ~26 slides. A deck where >70% of slides share one layout is too uniform — refactor to use TITLE_1_2 for comparisons, BLANK for hero photos, SECTION_DIVIDER for transitions, HERO_STATS for stat grids, etc.
+
+**Palette-diversity target:** the deck should distribute across surfaces approximately ~40% Cream / ~25% Peach / ~25% Sky / ~10% Red-accent — see `../marley-visual-brand/colors.md` deck-level distribution rule. Decks that are >70% one color are flagged by chris-critic.
 
 ## Step 4 — Customize per payer
 

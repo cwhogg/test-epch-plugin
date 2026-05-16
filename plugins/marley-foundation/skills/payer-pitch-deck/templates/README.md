@@ -12,6 +12,7 @@ This is a PowerPoint master template that contains Marley's brand-formatted slid
 3. Build the deck following the canonical 3-act narrative arc in `../narrative-arc.md`.
 4. Customize for the specific payer (see "Payer-specific customization" in narrative-arc.md).
 5. Apply visual brand rules from `../../marley-visual-brand/` — colors, typography, logo placement.
+6. When building in PowerPoint, choose the named layout from the master's Slide Layout panel that matches what `../narrative-arc.md` specifies for each slide — the names in narrative-arc.md (e.g. `TITLE_1_2`, `BLANK`, `HERO_STATS`) map directly to the master's layout panel via `../../marley-visual-brand/layouts.md`.
 
 ## What this folder does NOT contain
 

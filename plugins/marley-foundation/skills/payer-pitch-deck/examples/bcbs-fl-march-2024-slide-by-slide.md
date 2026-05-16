@@ -12,6 +12,14 @@ Redactions: payer-internal BCBS FL data is not in source (this is a Marley-prepa
 - **Prepared for Florida Blue**
 - **March 6, 2024**
 
+**Visual spec:**
+- Layout: `TITLE_FAMILY` (`TITLE` PPT variant)
+- Surface: Marley Purple `#5A38B2` full-bleed
+- Logo: Wordmark White center
+- Type: Reckless Medium for "Prepared for Florida Blue", Greycliff Regular for date
+- Icon: none
+- Photo: none
+
 ## Slide 2 — Topics for Discussion
 1. Marley Medical Overview
 2. How Marley Works with Payers
@@ -32,6 +40,13 @@ Redactions: payer-internal BCBS FL data is not in source (this is a Marley-prepa
 - $600B annual spend on CV and Endocrine
 - 23% of total patients = 71% of total healthcare spend
 - 2–3x annual spend on cardiometabolic chronic disease vs. those without
+
+**Visual spec:**
+- Layout: `HERO_STATS` (atop `TITLE_1_2` 2-panel structure — 4 hero stats top, 3 spend-framing stats bottom in horizontal strip)
+- Surface: Sky `#C9E5FC` — clinical/data slide
+- Type: hero numbers in Marley Purple `#5A38B2` Reckless Medium 72pt; captions in Greycliff SemiBold 12pt; source citations Greycliff Regular 9pt below the grid
+- Icon: none (the statistics are the visual)
+- Photo: none
 
 ## Slide 5 — PCPs overburdened
 *Primary Care Physicians need 26.7 hours per day to provide all guideline-recommended primary care services to a panel of 2,500 US adults.*
@@ -56,6 +71,13 @@ Positioning slide showing Marley between PCPs and specialists, paid for outcomes
 Lead → Video visit → Ship kit → Continuous monitoring → Proactive outreach/messaging → Follow-up video visits.
 *"We average 2+ patient touch points a week, keeping patients motivated and engaged."*
 
+**Visual spec:**
+- Layout: `BLANK` — hero photo full-bleed, horizontal flow overlay on lower 40% of slide
+- Surface: image is the surface — `Marley_Studio_Pills_Hands.jpg` (warm tones reinforce the human side of the journey)
+- Icons in flow overlay (small, White): `Marley_blood_pressure.svg` over "continuous monitoring", `Marley_pill.svg` over "ship kit", `Marley_heart.svg` over "follow-up"
+- Type: White reverse Reckless Medium for step labels, Greycliff Regular for the pull quote
+- Logo: small Monogram White bottom-right
+
 ## Slide 12 — Engagement metrics
 - 78% of patients active in last 30 days
 - <1 week access to first MD visit
@@ -70,6 +92,14 @@ Heritage credit + comparable evidence: 57% reduction in ED+Hosp (Asthma), 33% re
 ## Slide 14 — Patient case example
 Hypertensive Crisis to Controlled BP in 23 days. Annotated timeline of MD med change, lifestyle change (health coach), med change (pharmacist).
 
+**Visual spec:**
+- Layout: `CUSTOM` (or `BLANK` with overlay) — BP-over-time line chart top half, intervention timeline below with discrete annotated markers
+- Surface: Cream `#FDF7EF`; BP line in Marley Purple; the "Crisis" zone (>180 systolic) tinted Marley Red `#FF4E1E` at 20% opacity; "At goal" zone tinted Sky `#C9E5FC` at 20% opacity
+- Icons (small, Purple) at each intervention marker on the timeline: `Marley_pill.svg` (med change MD), `Marley_exercise.svg` (lifestyle change health coach), `Marley_pill.svg` (med change pharmacist)
+- Type: starting BP "182/117" and ending BP "126/72" called out in Reckless Medium 28pt at the chart endpoints
+- Logo: Monogram Purple bottom-right
+- Photo: none — the chart is the visual
+
 ## Slide 15 — Clinical results
 - 70% at guideline-based clinical goal at 6mo
 - 14.8 mmHg average BP reduction at 12 weeks (Stage 2 HTN entry)
@@ -77,6 +107,14 @@ Hypertensive Crisis to Controlled BP in 23 days. Annotated timeline of MD med ch
 
 ## Slide 16 — Marley meets payer needs (2-col)
 Left: our design choices. Right: payer challenges we solve (Engagement / Star Ratings / MLR).
+
+**Visual spec:**
+- Layout: `TITLE_1_2` (2-panel — this is the canonical Act 1 → Act 2 pivot slide)
+- Surface: paired — Peach `#FFDFD6` left panel (Marley's design choices, warm side) / Sky `#C9E5FC` right panel (payer challenges, clinical/professional side)
+- Icons per column: left anchored with `Marley_stethoscope.svg` (Purple); right anchored with `Marley_blood_pressure.svg` (Purple)
+- Type: column headlines in Reckless Medium 24pt; body in Greycliff Regular 14pt
+- Logo: small Monogram Purple bottom-right
+- Photo: none
 
 ## Slide 17 — Propeller heritage / payer credibility
 Co-founders + ~⅓ of team from Propeller. Logos of payer partners.

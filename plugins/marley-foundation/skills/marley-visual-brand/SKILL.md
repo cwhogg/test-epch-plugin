@@ -1,6 +1,6 @@
 ---
 name: marley-visual-brand
-description: Marley Medical's visual brand — six-color palette with hex codes (Marley Purple #5A38B2 primary, Cream background, Red/Peach/Sky accents), Reckless serif + Greycliff sans typography, wordmark/monogram logo rules, 13 custom icons, photography style (BW headshots + warm color studio). Used for decks, web pages, marketing graphics, slides, branded documents, image generation, slide layout decisions, color choices.
+description: Marley Medical's visual brand — six-color palette with hex codes (Marley Purple #5A38B2 primary, Cream background, Red/Peach/Sky accents), Reckless serif + Greycliff sans typography, wordmark/monogram logo rules, 13 custom icons with semantic mapping, photography style (BW headshots + warm color studio), and 7 named slide layout types from the master PowerPoint template (TITLE_FAMILY, TITLE_AND_BODY, TITLE_1_2 2-panel, SECTION_DIVIDER, HERO_STATS, CUSTOM, BLANK). Used for decks, web pages, marketing graphics, slides, branded documents, image generation, slide layout decisions, asset selection, color choices.
 ---
 
 # Marley Visual Brand — ambient context for visual artifacts
@@ -20,10 +20,11 @@ Any task producing a Marley visual artifact:
 
 ## What to do when this skill loads
 
-1. **Read [[colors]]** — the six brand colors with hex codes and rules for when to use each. Use Marley Purple (`#5A38B2`) as the primary brand color; Cream (`#FDF7EF`) as the default background.
+1. **Read [[colors]]** — the six brand colors with hex codes, when-to-use rules per color, AND the deck-level palette diversity rule (decks should distribute across cream/peach/sky/red surfaces, not be one-color dominated).
 2. **Read [[typography]]** — Reckless (serif, display) + Greycliff (sans, body). Don't substitute fonts; if Reckless isn't available, fall back to Newsreader (free Google font).
 3. **Read [[logo-usage]]** — when to use wordmark vs. monogram vs. icon-locked logo; clear space; minimum sizes; what NOT to do.
-4. **Read [[image-style]]** — iconography (13 custom icons), photography style (BW headshots + warm color studio shots), pattern guidance.
+4. **Read [[image-style]]** — iconography (13 custom icons each with a semantic mapping to slide types), photography style with named photo files and when to use each.
+5. **Read [[layouts]]** — the 7 named slide layout types from the master PowerPoint template. When generating any deck-related output, **name a specific layout for each slide** — TITLE_FAMILY for covers, TITLE_AND_BODY for standard content, TITLE_1_2 for 2-panel comparisons, SECTION_DIVIDER for chapter breaks, HERO_STATS for stat grids, CUSTOM for non-standard structures, BLANK for hero-photo / large-impact slides. A well-composed deck uses ≥4 distinct layouts.
 
 ## Asset locations
 
@@ -34,7 +35,12 @@ Any task producing a Marley visual artifact:
 
 ## Files
 
-- `colors.md`, `typography.md`, `logo-usage.md`, `image-style.md`, `source-refs.md`.
+- `colors.md` — palette + deck-level diversity rule
+- `typography.md` — Reckless + Greycliff + fallbacks + scale
+- `logo-usage.md` — wordmark/monogram/icon-locked rules
+- `image-style.md` — iconography (semantic mapping) + photography (named files) + pattern guidance
+- `layouts.md` — 7 named slide layout types from the master PowerPoint template
+- `source-refs.md` — extraction provenance
 
 ## Cross-references
 
