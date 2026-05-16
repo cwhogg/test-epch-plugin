@@ -19,6 +19,7 @@ The Marley payer pitch is a **3-act structure** within a topics-for-discussion f
 
 **Visual spec:**
 - Layout: `TITLE_FAMILY` (full-width title)
+- Pattern: cover (no content pattern — pure brand surface)
 - Surface: Marley Purple `#5A38B2` full-bleed (high-impact opening)
 - Logo: Wordmark, White reverse
 - Icon: none
@@ -29,7 +30,8 @@ Brief agenda (3 bullets matching the 3 acts).
 
 **Visual spec:**
 - Layout: `TITLE_AND_BODY`
-- Surface: Cream `#FDF7EF`
+- Pattern: `bulleted-toc` (3-item bulleted list with m-icon markers, paired with giant m-diamond on Purple right side — appears only on longer customer decks like BCBS / Feb)
+- Surface: Cream `#FDF7EF` (Peach also acceptable for the warmer Peach + Purple split treatment used in BCBS)
 - Logo: small Monogram Purple bottom-right
 - Icon: none
 - Photo: none
@@ -41,11 +43,12 @@ Three-bullet definition:
 - We currently bill fee-for-service, but are increasingly contracting for outcomes-based contracts
 
 **Visual spec:**
-- Layout: `TITLE_AND_BODY`
-- Surface: Cream `#FDF7EF`
-- Logo: small Wordmark Purple top-left
-- Icon: `Marley_stethoscope.svg` (Purple) locked top-right as a clinical-credibility anchor
-- Photo: none
+- Layout: `BLANK` with structured overlay, or `TITLE_1_2`
+- Pattern: `hero-photo-with-overlay` (full-bleed photo right ~40%, Purple surface left ~60%, italic-serif "Welcome to" + bold sans "Marley Medical" headline, 2-3 short paragraphs below — the canonical Welcome treatment)
+- Surface: Marley Purple `#5A38B2` left half, image-as-surface right half
+- Logo: small Monogram White, bottom-right or top-left
+- Icon: none (photo carries the visual)
+- Photo: `Marley_Studio_1.jpg` (3-women laughing — the canonical hero shot) or `Marley_Studio_2.jpg` for warmer empathetic treatment
 
 ### Slide 4 — The problem (hero stats slide)
 Four canonical stats arranged in a 2×2 with sources cited:
@@ -61,9 +64,10 @@ Plus spend framing:
 
 **Visual spec:**
 - Layout: `HERO_STATS` (4 large numbers in 2×2 grid, atop `TITLE_1_2` structure)
-- Surface: Sky `#C9E5FC` (data/clinical surface; this slide is about market problem-sizing)
+- Pattern: `hero-stat-grid` (6 stats in 3×2 or 8 stats in 4×2 — Purple rounded cards on Sky or white surface; always position 4 in the deck immediately after Welcome — never mid-deck)
+- Surface: Sky `#C9E5FC` or white (data/clinical surface; this slide is about market problem-sizing). Source citation in tiny gray footer always present.
 - Statistic numbers in Marley Purple `#5A38B2`, Reckless Medium 72pt+; captions in Greycliff SemiBold 12pt; source citations in Greycliff Regular 9pt below the grid
-- Icon: none (numbers are the visual)
+- Icon: none (numbers are the visual — `hero-stat-grid` rule)
 - Photo: none
 
 ### Slide 5 — Primary care is overburdened
@@ -71,6 +75,7 @@ Plus spend framing:
 
 **Visual spec:**
 - Layout: `TITLE_AND_BODY` with a single hero number ("26.7 hours per day") as the visual lead, body stacked-bar breakdown by activity below
+- Pattern: `two-stat-emphasis` (one giant number taking most of the slide, paired with a small chart or paper thumbnail below as substantiation) + `paper-thumbnails` (JGIM source paper thumbnail, slightly rotated)
 - Surface: Cream `#FDF7EF`
 - Icon: `Marley_stress.svg` (Red `#FF4E1E`) — accent to underscore the burden
 - Photo: none
@@ -82,8 +87,9 @@ Three-bullet framing of why current options fail and where Marley fits:
 - Outcomes-based payment models needed → today served by PCPs
 
 **Visual spec:**
-- Layout: `CUSTOM` — three-segment horizontal diagram (Specialists / NEW CATEGORY / PCPs) with center segment in Marley Purple as visual anchor
-- Surface: Cream `#FDF7EF` background; center segment Purple highlight
+- Layout: `CUSTOM` — three-segment horizontal diagram (Specialists / NEW CATEGORY / PCPs) with center segment in Marley Purple as visual anchor; often paired with a left-side bulleted-text column (`2-column-pivot`)
+- Pattern: `positioning-diagram` (3–4 horizontal bands stacked; Marley middle band elevated with white border or logo; top band Specialists in Orange/Red, bottom band PCPs in Sky; right-side arrow labels for payment-model framing when relevant). Often combined with `2-column-pivot` (bulleted explanation left, diagram right).
+- Surface: Cream `#FDF7EF` background; center band carries Purple highlight
 - Icon: `Marley_cross.svg` (White on Purple center segment) as the new-category marker
 - Photo: none
 
@@ -94,10 +100,11 @@ Three-bullet definition:
 - We are value-based and tie our fees to enrollment and clinical outcomes
 
 **Visual spec:**
-- Layout: `TITLE_AND_BODY` with optional left-side hero photo
-- Surface: Peach `#FFDFD6` (warm — this is the "who we are" identity slide)
-- Icon: `Marley_stethoscope.svg` (Purple) anchoring the slide
-- Photo: optional `Marley_Studio_Instruments.jpg` left half-bleed if photo-led variant
+- Layout: `CUSTOM` (radial composition with center logo + 6 satellite roles)
+- Pattern: `radial-team-diagram` (Marley orange m-diamond at center; 6 satellite role labels with icons radiating around it — Pharmacist `Marley_pill.svg`, Internal Medicine Physician `Marley_cross.svg`, Cardiologist `Marley_heart.svg`, Endocrinologist `Marley_needle.svg`, Dietitian `Marley_apple.svg`, Health Coach `Marley_blood_pressure.svg`. Bounded by Orange rounded rectangle.)
+- Surface: Cream `#FDF7EF` (Peach also acceptable for warmer "who we are" emphasis)
+- Icon: 6 per-role icons named above (Purple)
+- Photo: none (the radial diagram is the visual). OSF variant swaps center m-diamond for an embedded MD photo.
 
 ### Slide 8 — Comprehensive clinical scope + current panel profile
 Two columns:
@@ -106,6 +113,7 @@ Two columns:
 
 **Visual spec:**
 - Layout: `TITLE_1_2` (2-panel — this is a comparison/pairing slide)
+- Pattern: `2-column-pivot` (conditions list left, panel profile stats right — parallel-but-contrasting paired columns; the warm-list/cool-stats register is the canonical 2-column-pivot color treatment). Often paired with `paper-thumbnails` if a Venn diagram of complex-patient overlap is included.
 - Surface: paired — Peach `#FFDFD6` left (conditions list, warm), Sky `#C9E5FC` right (panel-profile stats, clinical)
 - Icons: per-column — left column locked with `Marley_heart.svg` (Purple), right column locked with `Marley_blood_pressure.svg` (Purple)
 - Photo: none
@@ -114,7 +122,8 @@ Two columns:
 Visual positioning: Marley sits between specialists, PCPs, and care managers — for the segment of cardiometabolic patients not well served by current options. We get paid for outcomes.
 
 **Visual spec:**
-- Layout: `CUSTOM` — 3-tier positioning diagram (Specialists / Marley / PCPs+Care Managers) with Marley row highlighted
+- Layout: `CUSTOM` — 4-tier positioning diagram (Specialists / Marley / Care Managers / PCPs) with Marley row highlighted
+- Pattern: `positioning-diagram` (4 horizontal bands stacked; Marley middle band elevated; top Specialists Orange/Red, bottom PCPs Sky, middle-extra Care Managers light Peach/pink. **Right-side arrow labels present** on this variant — "Paid for procedures / Paid for outcomes / Paid for time-based visits / Paid per attribute" — because this slide is the payment-model framing variant).
 - Surface: Cream `#FDF7EF`; Marley row highlighted in Marley Purple
 - Icon: `Marley_cross.svg` on Marley row, White on Purple
 - Photo: none
@@ -128,6 +137,7 @@ Plus the navigation logic: Marley refers to higher-level specialty care when nee
 
 **Visual spec:**
 - Layout: `CUSTOM` — three parallel funnels converging on Marley + downstream-referral arrow
+- Pattern: `3-column-option-compare` (three equal-weight columns showing 3 acquisition pathways; numbered 01/02/03 or labeled by path-name) + `horizontal-process-flow` for the downstream-referral arrow on the right
 - Surface: Cream `#FDF7EF`
 - Icons: three small per-path icons — `Marley_apple.svg` (self-refer / direct), `Marley_stethoscope.svg` (PCP refer), `Marley_cross.svg` (payer identify)
 - Photo: none
@@ -138,6 +148,7 @@ Simple horizontal flow: Lead → Video visit → Ship kit → Continuous monitor
 
 **Visual spec:**
 - Layout: `BLANK` — hero photo as background, horizontal flow overlay on lower 40% of slide
+- Pattern: `horizontal-process-flow (patient-journey variant)` (5-6 thin-connector steps left-to-right with a row of 4 real photo/screenshot tiles below — distinguishing characteristic of the patient-journey variant of `horizontal-process-flow`)
 - Surface: image is the surface — `Marley_Studio_Pills_Hands.jpg` full-bleed (warm tones reinforce the human side of the journey)
 - Icons: small per-step icons in the flow overlay — `Marley_blood_pressure.svg` (continuous monitoring), `Marley_pill.svg` (ship kit), `Marley_heart.svg` (follow-up)
 - Logo: small Monogram White bottom-right
@@ -154,9 +165,10 @@ Four hero metrics:
 
 **Visual spec:**
 - Layout: `HERO_STATS` (3×2 grid this time)
-- Surface: Sky `#C9E5FC` (data/engagement-evidence slide)
+- Pattern: `stat-stack` (6 stats in 2×3 grid, Purple rounded cards on white/Sky surface, no icons — the canonical engagement-KPI slide; key distinction from `hero-stat-grid` is that `stat-stack` has 6 stats and `hero-stat-grid` has 6 or 8 stats but in a different deck position with explicit source citations)
+- Surface: Sky `#C9E5FC` or white (data/engagement-evidence slide)
 - Statistic numbers in Marley Purple Reckless Medium 72pt+; captions Greycliff SemiBold 11–12pt
-- Icon: optional small `Marley_blood_pressure.svg` (Purple) top-left, signaling the device-readings dimension
+- Icon: none — the `stat-stack` pattern is iconless by convention (distinguishing it from `n-box-equal-grid` which often has icons)
 - Photo: none
 
 ### Slide 13 — Data-driven care model + Propeller heritage
@@ -167,7 +179,8 @@ Comparable evidence:
 - **33%** reduction in ED + Hospitalizations (COPD, at Propeller)
 
 **Visual spec:**
-- Layout: `TITLE_AND_BODY` with two-stat callout block (built-atop variant)
+- Layout: `TITLE_AND_BODY` with two-stat callout block (built-atop variant) plus paper-thumbnails
+- Pattern: `two-stat-emphasis` (the two Propeller reduction stats as prominent callouts) + `paper-thumbnails` (1–2 Propeller journal articles slightly rotated, ~5–10° tilt) + sometimes a small radial Fetch system diagram showing data-driven proactive-care logic
 - Surface: Cream `#FDF7EF` (credibility / heritage context)
 - Icon: `Marley_stethoscope.svg` (Purple) anchoring; small Propeller wordmark as comparable-evidence credibility
 - Photo: optional `Marley_Studio_Instruments.jpg` as quarter-bleed if visual-led variant
@@ -177,6 +190,7 @@ Concrete patient case showing rapid intervention: from Hypertensive Crisis (e.g.
 
 **Visual spec:**
 - Layout: `CUSTOM` — large BP-over-time line chart top half, annotated intervention timeline bottom half with discrete markers
+- Pattern: `annotated-timeline` (canonical patient-case slide: 8–9 dots on a horizontal line; Y-axis has 4 colored stage zones as horizontal background bands — Crisis Red, Stage 2 Orange, Stage 1 Yellow, At goal Green; dot colors match their zone; 3 intervention labels below in equal-width spans; explanatory paragraph in upper-right margin always starts "Within 23 days…")
 - Surface: Cream `#FDF7EF`; chart line in Marley Purple `#5A38B2`; crisis-zone shaded Marley Red `#FF4E1E` tint
 - Icons: per-intervention markers in timeline — `Marley_pill.svg` (med change), `Marley_exercise.svg` (lifestyle), `Marley_stethoscope.svg` (MD touch)
 - Logo: Monogram Purple bottom-right
@@ -188,8 +202,9 @@ Concrete patient case showing rapid intervention: from Hypertensive Crisis (e.g.
 - Downstream risk reduction (citing Lancet meta-analysis): For every 10mmHg reduction in BP — 20% less risk of major CV events, 27% less risk of stroke, 28% less risk of CHF.
 
 **Visual spec:**
-- Layout: `HERO_STATS` (2 hero outcomes on left, 3 downstream-risk stats on right, 2-row composition)
-- Surface: Sky `#C9E5FC`
+- Layout: `CUSTOM` (two-tier composition with charts on top, stats on bottom)
+- Pattern: `multi-chart-grid + stat-strip` (the canonical clinical-results slide, instantly recognizable across all 5 source decks: top tier is a Peach card containing 3 visualizations — Goal Attainment area chart left, Reduction-by-Initial-Stage grouped bar middle, BP Results data table right; bottom tier is 2 Sky stat cards on the left for hero outcomes + a Purple arrow connector + 3 Sky risk-reduction stats on the right. Always Lancet citation in footer for the downstream-risk stats.)
+- Surface: Cream `#FDF7EF` background, Peach card for chart row, Sky for stat cards
 - One hero stat highlighted with Marley Red `#FF4E1E` accent strip — pick the most distinctive number (typically "70% at goal at 6 months")
 - Icon: `Marley_heart.svg` (Purple) anchoring the downstream-risk-reduction half — cardiovascular impact
 - Photo: none
@@ -212,8 +227,9 @@ Right column: the payer challenges we solve —
 
 **Visual spec:**
 - Layout: `TITLE_1_2` (2-panel — this is the canonical pivot slide; the whole deck turns here)
-- Surface: paired — Peach `#FFDFD6` left (Marley's design choices, warm) / Sky `#C9E5FC` right (payer challenges, clinical)
-- This is also an `SECTION_DIVIDER` candidate if treated as the Act 1 → Act 2 transition — choose `TITLE_1_2` if pairing the two narratives side-by-side; choose `SECTION_DIVIDER` (full Purple bleed) if treating it purely as a transition
+- Pattern: `2-column-pivot` (canonical instance — the visual fulcrum of the entire payer deck. Bulleted-checklist-left / callout-cards-right variant: 4 checklist items on Marley's design choices left, 3 callout stat cards on payer challenges right)
+- Surface: paired — Peach `#FFDFD6` left (Marley's design choices, warm) / Sky `#C9E5FC` right (payer challenges, clinical) — the canonical pivot color treatment
+- This is also a `SECTION_DIVIDER` candidate if treated as the Act 1 → Act 2 transition — choose `TITLE_1_2` if pairing the two narratives side-by-side; choose `SECTION_DIVIDER` (full Purple bleed) if treating it purely as a transition with `headline-only-section-divider` pattern
 - Icons: per-column — left column anchored with `Marley_stethoscope.svg` (Purple), right column with `Marley_blood_pressure.svg` (Purple)
 - Photo: none
 
@@ -221,10 +237,11 @@ Right column: the payer challenges we solve —
 "Our team knows how to partner with payers to generate great outcomes." Co-founders + ~⅓ of team from Propeller Health. Logos of payers Marley has worked with at Propeller (and now at Marley).
 
 **Visual spec:**
-- Layout: `TITLE_AND_BODY` with logo-grid block
+- Layout: `TITLE_AND_BODY` with logo-row block
+- Pattern: `logos-row` (investor-row variant: 3 logos in a horizontal line — a16z, CRV, Rock Health — always at bottom of the team slide. Plus optional `paper-thumbnails` of press articles with circular Sky-blob backgrounds for press-article credibility variant.)
 - Surface: Cream `#FDF7EF`
 - Icon: small Propeller wordmark + Marley wordmark paired top-left as heritage signal
-- Photo: none (logo grid is the visual)
+- Photo: none (logo row is the visual)
 - Logo: Wordmark Purple top-left
 
 ### Slide 18 — We solve the biggest payer challenges (summary, 4 boxes)
@@ -234,9 +251,9 @@ Right column: the payer challenges we solve —
 - **Positive ROI** — reduce unnecessary utilization, reduce total cost of care, generate positive ROI
 
 **Visual spec:**
-- Layout: `HERO_STATS` (4 boxes, 2×2 grid — but each box is a concept-with-headline rather than a statistic)
-- Surface: Sky `#C9E5FC` (payer-evidence, cool/professional)
-- Each box can have a tinted accent strip; rotate through Peach / Sky tints to break the grid uniformity
+- Layout: `HERO_STATS` (4 boxes, 2×2 grid) or `CUSTOM`
+- Pattern: `horizontal-process-flow` (narrative-box variant — 4 rounded Peach cards in a horizontal row with arrow-tail connectors: Access → Engagement → Outcomes → ROI; this is the simplification of the older `distribution-bar-breakdown` ROI waterfall pattern) OR `n-box-equal-grid (4-box)` (when laid out as a 2×2 grid with Purple-header / white-body cards)
+- Surface: Cream `#FDF7EF` background; cards Peach (horizontal-process-flow variant) or Sky+Purple (4-box variant)
 - Icons per box: `Marley_apple.svg` (Access), `Marley_heart.svg` (Engagement), `Marley_stethoscope.svg` (Outcomes), `Marley_scale.svg` (Positive ROI)
 - Photo: none
 
@@ -251,8 +268,9 @@ Plus three additional credibility boxes:
 - **Path to geographic expansion** — easy except for payer contracting and credentialing, which payer partners help with
 
 **Visual spec:**
-- Layout: `HERO_STATS` (6 boxes, 3×2 grid)
-- Surface: Cream `#FDF7EF`
+- Layout: `HERO_STATS` (6 boxes, 3×2 grid) or `CUSTOM`
+- Pattern: `n-box-equal-grid (6-box variant)` (canonical payer-fit grid: 6 equal-weight category boxes in 3×2; all-Peach cards with orange titles; body in Greycliff Regular. This is the recurring "Easy to work with" composition.)
+- Surface: Cream `#FDF7EF` background; all cards Peach `#FFDFD6` (the 6-box variant is all-Peach by convention)
 - Icons per box where they fit: `Marley_apple.svg` (broad population), `Marley_cross.svg` (guideline-based), `Marley_blood_pressure.svg` (scalable / tech-enabled), `Marley_pill.svg` (easy contracting), `Marley_scale.svg` (value-based), `Marley_exercise.svg` (geo expansion)
 - Photo: none
 
@@ -263,6 +281,7 @@ Plus three additional credibility boxes:
 
 **Visual spec:**
 - Layout: `CUSTOM` — three sequential stages with progress arrow
+- Pattern: `horizontal-process-flow` (3-step narrative-box variant — equal-width boxes with arrow tails between, Purple header band)
 - Surface: Cream `#FDF7EF`
 - Each stage in a tinted card (Peach → Cream → Sky to suggest progression from warm intro to clinical evaluation)
 - Icons: small numbered markers (1, 2, 3) in Marley Purple circles per stage
@@ -276,8 +295,9 @@ Four criteria:
 4. **Patient is failing management** — 2+ ED visits in last 12 months, 1+ inpatient episode in last 12 months
 
 **Visual spec:**
-- Layout: `HERO_STATS` (4 numbered criteria in 2×2 or 4×1 layout)
-- Surface: Cream `#FDF7EF`
+- Layout: `HERO_STATS` (4 numbered criteria in 2×2 or 4×1 layout) or `CUSTOM`
+- Pattern: `n-box-equal-grid (4-box variant)` (4 equal-weight category boxes in 2×2 with Purple-header / white-body bullet cards — the canonical "selection criteria" composition)
+- Surface: Cream `#FDF7EF` background; cards Purple-header / white-body
 - Icons per criterion: `Marley_stethoscope.svg` (clinical profile), `Marley_cross.svg` (not attributed), `Marley_stress.svg` (not engaged), `Marley_bandage.svg` (failing management)
 - Photo: none
 
@@ -288,6 +308,7 @@ Four criteria:
 
 **Visual spec:**
 - Layout: `TITLE_1_2` with three-column variant (or `CUSTOM` for the 3-card layout)
+- Pattern: `3-column-option-compare` (three equal-weight columns comparing options on the same dimensions; cards are rounded; Purple-header + white body since these are complex options needing explanation)
 - Surface: paired — Peach `#FFDFD6` (Structure 1, conservative) / Cream `#FDF7EF` (Structure 2, balanced) / Sky `#C9E5FC` (Structure 3, sophisticated milestones)
 - Icon per structure: `Marley_pill.svg` (FFS - per-script), `Marley_scale.svg` (Capitation - PMPM), `Marley_heart.svg` (Milestones - outcomes)
 - Photo: none
@@ -297,6 +318,7 @@ Standalone slide for each structure showing the monthly claim flow and the evalu
 
 **Visual spec (applies to each of the 3 slides):**
 - Layout: `CUSTOM` — horizontal timeline with claim markers + evaluation milestone callout
+- Pattern: `horizontal-process-flow (claim-circle variant)` (small Sky circles on a thin Purple line representing monthly claims, terminal Peach summary box on far right with evaluation point and at-risk % callout — the canonical contracting-timeline composition)
 - Surface: same color as the corresponding card on Slide 22 — Slide 23 Peach (FFS), Slide 24 Cream (Capitation), Slide 25 Sky (Milestones)
 - Icon: per-structure icon from Slide 22 echoed in upper-right corner
 - Photo: none
@@ -305,9 +327,10 @@ Standalone slide for each structure showing the monthly claim flow and the evalu
 ### Slide 26 — Thank You
 
 **Visual spec:**
-- Layout: `TITLE_FAMILY` (minimal closing slide)
-- Surface: Marley Purple `#5A38B2` full-bleed (symmetric with cover slide)
-- Logo: large Wordmark White center
+- Layout: `SECTION_DIVIDER` or `TITLE_FAMILY` (minimal closing slide)
+- Pattern: `headline-only-section-divider` (closing variant: full-bleed Peach with orange m-logo center, OR Purple full-bleed with Wordmark White center)
+- Surface: Peach `#FFDFD6` full-bleed (closing variant) or Marley Purple `#5A38B2` full-bleed (symmetric with cover)
+- Logo: large Wordmark White center (if Purple) or orange Monogram (if Peach)
 - Icon: none
 - Photo: none
 
@@ -323,6 +346,7 @@ This appendix expands the clinical evidence with more granular cuts:
 
 **Visual spec:**
 - Layout: `TITLE_AND_BODY` with stacked-bar chart
+- Pattern: `distribution-bar-breakdown` (population segmentation as horizontal/vertical bars — note: this pattern was retired from the main deck flow in Jan 2024 redesign for the ROI-waterfall use case, but a clean distribution-bar at intake is still appropriate for clinical-data appendix work)
 - Surface: Sky `#C9E5FC` (clinical data)
 - Icon: `Marley_blood_pressure.svg` (Purple) top-right
 - Photo: none
@@ -331,6 +355,7 @@ This appendix expands the clinical evidence with more granular cuts:
 
 **Visual spec:**
 - Layout: `HERO_STATS` (3 stats — one per entry stage)
+- Pattern: `hero-stat-grid` (smaller 3-stat variant for entry-stage breakdown — appendix-scale rather than the deck's-position-4-hero-stats role)
 - Surface: Sky `#C9E5FC`
 - Most-improved stage highlighted with Marley Red `#FF4E1E` accent strip
 - Icon: `Marley_heart.svg` (Purple)
@@ -340,6 +365,7 @@ This appendix expands the clinical evidence with more granular cuts:
 
 **Visual spec:**
 - Layout: `TITLE_AND_BODY` with line chart (cohort retention/improvement over time)
+- Pattern: `metric-over-time-chart` (single metric on Y axis, time on X — appendix-scale cohort visualization; rarer than `multi-chart-grid + stat-strip` which subsumes most charting needs in the main deck)
 - Surface: Sky `#C9E5FC`
 - Chart line in Marley Purple; 10mmHg threshold marked with Red accent line
 - Icon: `Marley_blood_pressure.svg`
@@ -349,6 +375,7 @@ This appendix expands the clinical evidence with more granular cuts:
 
 **Visual spec (applies to each of 3 slides):**
 - Layout: `TITLE_AND_BODY` (consistent chart layout for visual rhythm across the trio)
+- Pattern: `metric-over-time-chart` (single metric on Y axis, time on X — repeated 3 times across the trio with consistent composition for visual rhythm)
 - Surface: Sky `#C9E5FC`
 - Icon: `Marley_blood_pressure.svg`
 - Photo: none
@@ -357,6 +384,7 @@ This appendix expands the clinical evidence with more granular cuts:
 
 **Visual spec:**
 - Layout: `TITLE_1_2` (2-panel — overall left, weight-meds-only right)
+- Pattern: `2-column-pivot` (paired weight-data charts — overall human context left, drug-specific clinical right)
 - Surface: paired — Peach `#FFDFD6` left (overall, human-context warm) / Sky `#C9E5FC` right (drug-specific, clinical)
 - Icons: `Marley_scale.svg` (left), `Marley_pill.svg` (right)
 - Photo: none
@@ -367,6 +395,7 @@ This appendix expands the clinical evidence with more granular cuts:
 
 **Visual spec:**
 - Layout: `CUSTOM` — 3-step horizontal flow with US-map underlay
+- Pattern: `horizontal-process-flow` (3-step narrative-box variant) + `geographic-map` (US map with target/active states highlighted — `geographic-map` is a customer-specific pattern; use here when the customer is regional or multi-state)
 - Surface: Cream `#FDF7EF`; US map in Sky tint with active-states in Marley Purple
 - Icon: small numbered markers per step
 - Photo: none
@@ -377,6 +406,7 @@ $204 PMPM HTN savings, $163 PMPM T2DM savings.
 
 **Visual spec:**
 - Layout: `HERO_STATS` (2 hero numbers)
+- Pattern: `two-stat-emphasis` (one or two huge numbers as the slide's primary visual; Ochsner methodology citation prominent below)
 - Surface: Sky `#C9E5FC`
 - Source citation prominent (Ochsner's published methodology)
 - Icon: `Marley_scale.svg` (financial-impact framing)
@@ -388,6 +418,7 @@ $39k PCI, $77.7k CABG, $37k stroke 1st-quarter costs.
 
 **Visual spec:**
 - Layout: `HERO_STATS` (3 hero numbers)
+- Pattern: `hero-stat-grid` (3-stat appendix-scale variant — appendix-side benchmarks rather than the main-deck position-4 problem-framing role; Red-strip accents on each figure since these are "financial pain" numbers)
 - Surface: Sky `#C9E5FC` with Red `#FF4E1E` accent strips on each cost figure (these are the "what payers spend without us" numbers — Red signals the financial pain)
 - Icon: `Marley_heart.svg` (CV event framing)
 - Photo: none

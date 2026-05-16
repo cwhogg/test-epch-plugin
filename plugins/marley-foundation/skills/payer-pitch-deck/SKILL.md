@@ -25,6 +25,7 @@ Before drafting:
 - Read `../marley-context/company.md`, `market.md`, and `pipeline.md` — current-state numbers matter
 - Read `../marley-visual-brand/colors.md`, `typography.md`, `logo-usage.md`, `image-style.md` — payer decks are visual artifacts; brand fidelity matters
 - **Read `../marley-visual-brand/layouts.md` — the 7 named slide layout types. Every slide in the generated deck must name a specific layout from this file (TITLE_FAMILY / TITLE_AND_BODY / TITLE_1_2 / SECTION_DIVIDER / HERO_STATS / CUSTOM / BLANK).**
+- **Read `../marley-visual-brand/slide-patterns.md` — the ~15 recurring composition patterns extracted from all 5 source payer decks (hero-stat-grid, positioning-diagram, 2-column-pivot, 3-column-option-compare, horizontal-process-flow, stat-stack, annotated-timeline, multi-chart-grid + stat-strip, n-box-equal-grid, radial-team-diagram, paper-thumbnails, logos-row, hero-photo-with-overlay, headline-only-section-divider, more) plus customer-specific patterns (geographic-map, gantt-chart, FFS→VBC diagram, etc.) and dropped patterns. Every content slide must name a specific pattern in addition to its layout.**
 
 ## Step 3 — Draft
 
@@ -44,14 +45,21 @@ Use the master PPT template at `~/epch-claude/visual brand/Marley_Presentation_M
 Each slide description in the generated deck **must** name:
 
 1. **Layout** — one of the 7 named layouts from `../marley-visual-brand/layouts.md` (e.g. `Layout: TITLE_1_2 (2-panel)`). Generic descriptions like "a slide with hero stats" are not acceptable — name the layout.
-2. **Surface (color)** — which Marley color the slide uses (Cream / Peach / Sky / Red accent / Purple full-bleed). Reference `../marley-visual-brand/colors.md` deck-level-palette-diversity rules — don't default everything to Cream.
-3. **Icon (when applicable)** — specific SVG filename from `../marley-visual-brand/image-style.md` semantic icon mapping (e.g. `Marley_stethoscope.svg`, `Marley_heart.svg`). Not "a clinical icon."
-4. **Photo (when applicable)** — specific JPG filename from `../marley-visual-brand/image-style.md` semantic photo mapping (e.g. `Marley_Studio_Pills_Hands.jpg`). Not "a hero photo."
-5. **Logo lockup (when applicable)** — wordmark / monogram / icon-locked, with color variant (e.g. `Wordmark Purple` for cover, `Monogram White` for image-overlay).
+2. **Pattern** — one of the ~15 composition patterns from `../marley-visual-brand/slide-patterns.md` (e.g. `Pattern: hero-stat-grid`, `Pattern: 2-column-pivot`, `Pattern: horizontal-process-flow (patient-journey variant)`, `Pattern: annotated-timeline`, `Pattern: multi-chart-grid + stat-strip`). The pattern carries composition rules (element count, asset role, surface tendencies) that the layout alone doesn't specify. Pick the pattern that fits the slide's communicative job — don't default to one pattern across many slides.
+3. **Surface (color)** — which Marley color the slide uses (Cream / Peach / Sky / Red accent / Purple full-bleed). Reference `../marley-visual-brand/colors.md` deck-level-palette-diversity rules — don't default everything to Cream.
+4. **Icon (when applicable)** — specific SVG filename from `../marley-visual-brand/image-style.md` semantic icon mapping (e.g. `Marley_stethoscope.svg`, `Marley_heart.svg`). Not "a clinical icon."
+5. **Photo (when applicable)** — specific JPG filename from `../marley-visual-brand/image-style.md` semantic photo mapping (e.g. `Marley_Studio_Pills_Hands.jpg`). Not "a hero photo."
+6. **Logo lockup (when applicable)** — wordmark / monogram / icon-locked, with color variant (e.g. `Wordmark Purple` for cover, `Monogram White` for image-overlay).
 
 **Layout-diversity target:** the generated deck should use **at least 4 distinct layout types** across its ~26 slides. A deck where >70% of slides share one layout is too uniform — refactor to use TITLE_1_2 for comparisons, BLANK for hero photos, SECTION_DIVIDER for transitions, HERO_STATS for stat grids, etc.
 
+**Pattern-diversity target:** the generated deck should use **6+ distinct composition patterns** across its ~26 slides. A deck that repeats the same pattern more than 3 times consecutively is too uniform — reach for `slide-patterns.md` to vary the composition treatment.
+
 **Palette-diversity target:** the deck should distribute across surfaces approximately ~40% Cream / ~25% Peach / ~25% Sky / ~10% Red-accent — see `../marley-visual-brand/colors.md` deck-level distribution rule. Decks that are >70% one color are flagged by chris-critic.
+
+**Customer-specific patterns:** for health-system audiences, reach for `gantt-chart` (B2B contracting pipeline), `geographic-map` (regional expansion), `diagram-with-arrows (FFS→VBC upgrade)`. For multi-payer/older audiences, `logos-grid (payer portfolio)` is OK. Don't use a `logos-grid` of competitor payers when pitching one specific payer — it's awkward.
+
+**Dropped patterns to avoid:** `checklist-vs-status-table`, `tabbed-card`, `9-icon services grid`, `distribution-bar-breakdown` ROI waterfall, `8-box n-grid`, `radial-ecosystem-diagram` — all dropped in the Jan 2024 redesign. See `slide-patterns.md` "Dropped patterns" section.
 
 ## Step 4 — Customize per payer
 

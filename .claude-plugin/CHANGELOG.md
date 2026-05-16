@@ -59,6 +59,66 @@ Self-review identified 20 high+medium-impact improvements applied in one pass. M
 
 ---
 
+## v0.5.0 — Slide composition patterns extracted from all 5 source payer decks
+
+v0.4.0 added named layouts (the structural skeleton) and per-slide asset specification. But "Layout: TITLE_AND_BODY" + "Surface: Cream" still leaves wide latitude for what a slide actually *looks like* — the same layout can host an annotated timeline, a 4-box grid, or a radial team diagram. The missing middle layer is the **composition pattern**: the recurring visual templates that give Marley payer decks their look.
+
+This release adds that pattern vocabulary, extracted by walking all 5 source payer decks slide-by-slide and identifying patterns that recur across them.
+
+**Foundation — new file `marley-visual-brand/slide-patterns.md`**
+
+Distilled from all 5 payer-deck PDFs (BCBS FL March 2024, OSF March 2024, Feb 13 2024 generic, Jan 10 2024 generic, UHC Accelerator May 2023). Each pattern entry includes: composition rules (element count, asset role, surface tendencies), when-to-use, host layout, source-slide references across all 5 decks.
+
+15 most-used patterns (3+ decks):
+- `horizontal-process-flow` (14 occurrences) — narrative-box / patient-journey / claim-circle sub-variants
+- `2-column-pivot` (8) — the canonical pivot slide (Peach left / Sky right)
+- `positioning-diagram` (8) — Marley elevated middle band between Specialists / PCPs
+- `paper-thumbnails` (8) — citation thumbnails as background credibility props
+- `3-column-option-compare` (7) — three contracting structures / three acquisition paths
+- `logos-row` (7) — investor / payer / press-credibility row
+- `hero-photo-with-overlay` (6) — the canonical Welcome treatment (every deck)
+- `headline-only-section-divider` (6)
+- `multi-chart-grid + stat-strip` (5) — the canonical clinical-results slide
+- `n-box-equal-grid (4-box)` (5) — selection criteria / value-prop summary
+- `n-box-equal-grid (6-box)` (4) — payer-fit grid
+- `hero-stat-grid` (4) — canonical position-4 problem-framing slide
+- `stat-stack` (4) — engagement KPIs (always Purple cards, no icons)
+- `annotated-timeline` (4) — canonical patient-case slide (8–9 dots, 4 colored zones)
+- `radial-team-diagram` (4) — 6 satellite role labels around Marley m-diamond center
+
+Customer-specific patterns (1–2 decks; invoke when audience calls for them):
+- `geographic-map` (health-system / multi-state-payer audiences)
+- `gantt-chart` (B2B contracting pipeline — OSF only; health-system audiences)
+- `diagram-with-arrows (FFS→VBC upgrade)` (OSF only; contract-economics narratives)
+- `2-column-photo-overlay` (illustrative patient photo — mostly demoted to appendix)
+- `logos-grid (payer portfolio)` (only in generic decks; awkward in customer-specific decks)
+- `metric-over-time-chart` (rarer than expected; usually subsumed by `multi-chart-grid + stat-strip`)
+- `two-stat-emphasis` (single giant number; paired with paper-thumbnail substantiation)
+- `bulleted-toc` (longer / more formal customer decks only)
+
+Dropped patterns (May 2023 only; replaced in Jan 2024 redesign — don't reach for these):
+- `checklist-vs-status-table`, `tabbed-card`, `9-icon services grid`, `distribution-bar-breakdown` ROI waterfall, `8-box n-grid`, `radial-ecosystem-diagram`
+
+Plus pattern → host layout and pattern → surface tendency tables, plus evolution notes (May 2023 → Jan → Feb → March 2024).
+
+**Foundation — supporting updates**
+- `marley-visual-brand/SKILL.md` — description and load steps include slide-patterns; files section adds it.
+- `marley-visual-brand/source-refs.md` — documents the 5-deck pattern-extraction provenance (extracted 2026-05-16) and notes that pattern names are coined for this skill (Marley has no formal pattern-naming convention) and composition rules are extracted from observed repetition across decks.
+
+**Task skill — `payer-pitch-deck`**
+- `SKILL.md` Step 2 loads `slide-patterns.md`. Step 3 now requires a `Pattern` field in the per-slide visual spec alongside Layout / Surface / Icon / Photo / Logo. Adds pattern-diversity target (6+ distinct patterns across ~26 slides), customer-specific-pattern guidance, and dropped-pattern avoidance.
+- `narrative-arc.md` — every slide in all 3 acts (cover + 25 content slides + 10 appendix) gets a `Pattern:` line in its Visual spec block naming the specific composition pattern that fits the slide's communicative job.
+- `examples/bcbs-fl-march-2024-slide-by-slide.md` — 5 representative retrofitted slides now include Pattern lines (cover, hero-stat-grid slide 4, patient-journey slide 11, patient-case slide 14, 2-column-pivot slide 16). New footer note enumerates the ~10 distinct patterns the BCBS deck uses across its slides.
+
+**Sub-agent — `chris-critic`**
+- "Any deck" conditional-load list now includes `slide-patterns.md`.
+- "Any deck — visual specificity" variant-awareness block expanded with: pattern-named-per-slide check, layout-and-pattern-diversity check (≥4 layouts + 6+ patterns), pattern-fit-per-slide-job check (e.g. hero-stat-grid only at position 4; stat-stack only on engagement-KPI slides; annotated-timeline only on patient-case slides; radial-team-diagram only on care-team slides), customer-specific-pattern appropriateness check, dropped-pattern avoidance check.
+- Diagnostics output template's `Visual specificity (decks only)` line now references pattern naming alongside layout and asset naming.
+
+**What this doesn't do (deferred):** fundraise-pitch-deck and product-scoping-deck per-slide Pattern annotations (they benefit transitively from `slide-patterns.md` but their own narrative-arc files weren't retrofitted this pass). No Pattern-line retrofit on the other ~21 BCBS example slides beyond the original 5.
+
+---
+
 ## v0.4.0 — Per-slide visual specificity + named layouts vocabulary
 
 End-to-end test of the payer-pitch-deck skill via Claude Cowork surfaced two visual-design weaknesses: generated decks used uniform layouts (mostly one-column text blocks) and named no specific brand assets per slide (generic "a clinical icon", "a hero photo"). Root cause: the visual-brand skill documented *what* the brand contains but never gave Claude a vocabulary for *how to compose with it* per slide. This release adds that vocabulary and makes per-slide visual specification required.

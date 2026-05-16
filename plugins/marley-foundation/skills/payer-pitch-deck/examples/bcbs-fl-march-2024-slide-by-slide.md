@@ -14,6 +14,7 @@ Redactions: payer-internal BCBS FL data is not in source (this is a Marley-prepa
 
 **Visual spec:**
 - Layout: `TITLE_FAMILY` (`TITLE` PPT variant)
+- Pattern: cover (no content pattern — pure brand surface; covers don't carry a `slide-patterns.md` pattern)
 - Surface: Marley Purple `#5A38B2` full-bleed
 - Logo: Wordmark White center
 - Type: Reckless Medium for "Prepared for Florida Blue", Greycliff Regular for date
@@ -43,6 +44,7 @@ Redactions: payer-internal BCBS FL data is not in source (this is a Marley-prepa
 
 **Visual spec:**
 - Layout: `HERO_STATS` (atop `TITLE_1_2` 2-panel structure — 4 hero stats top, 3 spend-framing stats bottom in horizontal strip)
+- Pattern: `hero-stat-grid` (Purple rounded cards on Sky surface; 4 stats top in 2×2 + 3 spend-framing stats bottom in horizontal strip; tiny gray source-citation footer always present. Canonical position-4 problem-framing slide — never used mid-deck.)
 - Surface: Sky `#C9E5FC` — clinical/data slide
 - Type: hero numbers in Marley Purple `#5A38B2` Reckless Medium 72pt; captions in Greycliff SemiBold 12pt; source citations Greycliff Regular 9pt below the grid
 - Icon: none (the statistics are the visual)
@@ -73,6 +75,7 @@ Lead → Video visit → Ship kit → Continuous monitoring → Proactive outrea
 
 **Visual spec:**
 - Layout: `BLANK` — hero photo full-bleed, horizontal flow overlay on lower 40% of slide
+- Pattern: `horizontal-process-flow (patient-journey variant)` (5-6 thin-connector steps left-to-right with a row of 4 real photo/screenshot tiles below — the distinguishing characteristic of the patient-journey variant)
 - Surface: image is the surface — `Marley_Studio_Pills_Hands.jpg` (warm tones reinforce the human side of the journey)
 - Icons in flow overlay (small, White): `Marley_blood_pressure.svg` over "continuous monitoring", `Marley_pill.svg` over "ship kit", `Marley_heart.svg` over "follow-up"
 - Type: White reverse Reckless Medium for step labels, Greycliff Regular for the pull quote
@@ -94,6 +97,7 @@ Hypertensive Crisis to Controlled BP in 23 days. Annotated timeline of MD med ch
 
 **Visual spec:**
 - Layout: `CUSTOM` (or `BLANK` with overlay) — BP-over-time line chart top half, intervention timeline below with discrete annotated markers
+- Pattern: `annotated-timeline` (8–9 dots on a horizontal line; Y-axis has 4 colored stage zones — Crisis Red, Stage 2 Orange, Stage 1 Yellow, At goal Green; dot colors match their zone; 3 intervention labels below in equal-width spans; explanatory paragraph in upper-right margin starts "Within 23 days…". Single patient case — canonical Slide 14 composition across all 4 decks since Jan 2024.)
 - Surface: Cream `#FDF7EF`; BP line in Marley Purple; the "Crisis" zone (>180 systolic) tinted Marley Red `#FF4E1E` at 20% opacity; "At goal" zone tinted Sky `#C9E5FC` at 20% opacity
 - Icons (small, Purple) at each intervention marker on the timeline: `Marley_pill.svg` (med change MD), `Marley_exercise.svg` (lifestyle change health coach), `Marley_pill.svg` (med change pharmacist)
 - Type: starting BP "182/117" and ending BP "126/72" called out in Reckless Medium 28pt at the chart endpoints
@@ -110,6 +114,7 @@ Left: our design choices. Right: payer challenges we solve (Engagement / Star Ra
 
 **Visual spec:**
 - Layout: `TITLE_1_2` (2-panel — this is the canonical Act 1 → Act 2 pivot slide)
+- Pattern: `2-column-pivot` (the canonical instance — visual fulcrum of the entire payer deck. Bulleted-checklist-left / callout-cards-right variant: 4 design-choice bullets left, 3 payer-challenge callout cards right. Peach left / Sky right is the canonical pivot color treatment.)
 - Surface: paired — Peach `#FFDFD6` left panel (Marley's design choices, warm side) / Sky `#C9E5FC` right panel (payer challenges, clinical/professional side)
 - Icons per column: left anchored with `Marley_stethoscope.svg` (Purple); right anchored with `Marley_blood_pressure.svg` (Purple)
 - Type: column headlines in Reckless Medium 24pt; body in Greycliff Regular 14pt
@@ -153,3 +158,4 @@ BP classification at intake, BP reductions by entry stage, % >10mmHg by time, we
 - **Three contracting structures (#22) + visualizations (#23–25)** signal Marley is sophisticated about payer contracting and ready for any of the three.
 - **Appendix is real evidence**, not afterthought — Stage 2 / Stage 3 entry breakdowns, weight data, comparable Ochsner results, cost benchmarks. Payers who flip to the appendix get real depth.
 - **"Easy contracting" line on Slide 19** is payer-specific — when pitching another BCBS plan, this line references existing BCBS contracts to signal credibility within that family.
+- **Pattern vocabulary across the deck** — BCBS FL uses ~10 distinct composition patterns from `../../marley-visual-brand/slide-patterns.md`: `hero-photo-with-overlay` (slide 3), `hero-stat-grid` (slide 4), `two-stat-emphasis` + `paper-thumbnails` (slide 5), `positioning-diagram` (slides 6 and 9), `radial-team-diagram` (slide 7), `2-column-pivot` (slides 8 and 16), `3-column-option-compare` (slides 10 and 24), `horizontal-process-flow` patient-journey + narrative-box + claim-circle variants (slides 11, 20, 22, 25–27), `stat-stack` (slide 12), `annotated-timeline` (slide 14), `multi-chart-grid + stat-strip` (slide 15), `n-box-equal-grid` 4-box + 6-box (slides 19, 21, 23), `logos-row` (slide 17), `headline-only-section-divider` (slides 18 and 28). That's why the deck reads as visually coherent rather than monotonous — pattern variety, not pattern uniformity.
